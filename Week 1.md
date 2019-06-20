@@ -1,10 +1,27 @@
-Tuesday - 6/18/19
-==================
+### Tuesday - 6/18/19
 
-> Used CASA's 'impbcor' (primary beam correction) command to reduce 1.4cm continuum image
+Used CASA's `impbcor` (primary beam correction) command to reduce the 1.4 cm continuum image
 
-'''python
+```python
 cd /lustre/aoc/students/mmadden/downloads/prelim_files
 casa #will not run if CASA isn't installed
 impbcor(imagename='NGC1333IRAS4A_contful_p0.image.tt0', pbimage='MGC1333IRAS4A_contful_p0.pb.tt0', outfile='NGC1333IRAS4A _contful_p0.pbcor')
-'''
+```
+
+### Wednesday - 6/18/19
+
+Checked detection of `CH3OH_line8` and `NH3_33` toward A1, A2, B1, B2, and C protostars
+Started Google Sheet "NGC1333IRAS4 Spectra" to record positive and negative detections of `CH3OH_line8` and `NH_33`
+
+**Q-Branch Transitions of Remaining Methanol Data:**
+
+Rest Freq. (MHz)                      Upper Level Energy (K)			 Quantum Numbers							Symmetry State
+  24928.7280      0.013    -5.9530 3   		 	24.3097 					28  		325041404 			3 2 2 1       3 1 2 1        CH3OH, vt=0-2
+  24933.5040      0.012    -5.8203 3    		30.7644 					36  		325041404 			4 2 3 1       4 1 3 1        CH3OH, vt=0-2
+  24934.4010      0.013    -6.1883 3    		19.4686 					20  		325041404 			2 2 1 1       2 1 1 1        CH3OH, vt=0-2
+  24959.1230      0.012    -5.7292 3   			38.8326 					44 			325041404 			5 2 4 1       5 1 4 1        CH3OH, vt=0-2
+  25018.1760      0.012    -5.6612 3   			48.5142 					52  		325041404 			6 2 5 1     	6 1 5 1        CH3OH, vt=0-2
+  25124.9320      0.012    -5.6082 3   			59.8092 					60  		325041404 			7 2 6 1     	7 1 6 1        CH3OH, vt=0-2
+  25294.4830      0.013    -5.5657 3   			72.7174 					68  		325041404 			8 2 7 1     	8 1 7 1        CH3OH, vt=0-2
+  25541.4670      0.014    -5.5310 3   			87.2386 					76  		325041404 			9 2 8 1     	9 1 8 1        CH3OH, vt=0-2
+	
