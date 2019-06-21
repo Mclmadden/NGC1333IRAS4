@@ -8,7 +8,7 @@ Learned the basics of CASA Viewer, such as adding regions to take spectra diagra
 
 ### Tuesday - 6/18/19
 
-Used CASA's `impbcor` (primary beam correction) command to reduce the 1.4 cm wavelength continuum image
+Used CASA's `impbcor` (primary beam correction) command to reduce the 1.4 cm wavelength continuum image:
 
 ```python
 cd /lustre/aoc/students/mmadden/downloads/prelim_files
@@ -58,13 +58,24 @@ No transitions were detected toward C.
 
 ### Friday 6/21/19
 
-Regions/aperture drawn over contour map at protostar locations:
+**Regions/aperture drawn over contour map at protostar locations:**
 
---------------------|A1|A2|B1|B2|C
+------------------------------|A1|A2|B1|B2|C
 ---|---|---|---|---|---
-**Center X (hr:min:sec of arc)**|3:29:10.539|3:29:10.435|3:29:12.018|3:29:12.841|3:29:12.551
-**Center Y (deg., arcmin, arcsec)**|31, 13, 30.886|31, 13, 32.096|31, 13, 7.975|31, 13, 6.854|21, 13, 58.143
+**Center X (hr:min:sec of arc)**   |  3:29:10.539  |   3:29:10.435  |  3:29:12.018 |  3:29:12.841  | 3:29:12.551
+**Center Y (deg., arcmin, arcsec)**| 31, 13, 30.886| 31, 13, 32.096 | 31, 13, 7.975| 31, 13, 6.854 | 21, 13, 58.143
 
 N.B. The beam, width x height = 1x1 arcsecond for all regions
 
-Saved spectra of each methanol and ammonia transition at each protostar as fits files in directory `NGC1333IRAS4_Spectra`
+Saved spectra of each methanol and ammonia transition at protostars A1, A2, and B1 (with the exception of `NH3_11` spectra taken at protostars B2 and C in addition*) as FITS files in directory `NGC1333IRAS4_Spectra` under `Spectra_NH3` and `Spectra_CH3OH` respectively
+
+* `NH3_11` shows a positive detection toward protostar B2; `NH3_11` also appears to have an absorption line(?) in its spectrum at protostar C 
+
+Used CASA's `exportfits` command to convert `CH3OH_line8` from an image to a FITS file:
+
+```python
+cd /lustre/aoc/students/mmadden/downloads/NGC1333IRAS4A 
+casa #will not run if CASA isn't installed
+exportfits(imagename='NGC1333IRAS4A_CH3OH_line8.image', fitsimage='NGC1333IRAS4A_CH3OH_line8.fits')
+```
+
