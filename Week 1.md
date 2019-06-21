@@ -45,18 +45,16 @@ Completed Google Sheet "NGC1333IRAS4 Spectra" with recordings of positive and ne
 
 **Methanol Files:** `CH3OH_line8`, `CH3OH_line10`, `CH3OH_line11`, `CH3OH_line12`, `CH3OH_line13`, `CH3OH_line14`, `CH3OH_line15`, `CH3OH_line16`
 
-Only `CH3OH_line8` was detected toward A1, A2, and B1. 
-No transitions detected toward B2 and C.
->For A1, A2, and B1, all the negative lines show the second peak (out of three) in their spectra. 
+All methanol transitions were detected toward A1, A2, and B1. 
+No transitions detected toward B2 and C. 
+
+N.B. Because `CH3OH_line8` contains three transitions, its spectrum shows three different peaks.
 
 **Ammonia Files:** `NH3_11`, `NH3_22`, `NH3_33`, `NH3_44`, `NH3_55`, `NH3_66`, `NH3_77`
 
-Only `NH3_11` was detected toward A1, B1, and B2. 
-`NH3_11`, `NH3_22`, and `NH3_33` were detected toward A2. 
-No transitions detected toward C.
->For A1, `NH3_22` shows one third of the third peak (out of five) in its spectrum.
->For A2, all the negative transitions show half of the third peak (out of five) in their spectra.
->For B1, `NH3_22` shows half of the third peak (out of four) in its spectrum.
+All ammonia transitions were detected toward A1, A2, and B1. 
+Only `NH3_11` was detected toward B2. 
+No transitions were detected toward C.
 
 ### Friday 6/21/19
 
