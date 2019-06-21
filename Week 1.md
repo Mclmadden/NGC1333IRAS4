@@ -59,11 +59,11 @@ No transitions were detected toward C.
 ### Friday 6/21/19
 
 Regions/aperture drawn over contour map at protostar locations:
----| A1 | A2 | B1 | B2 | C | 
----|---|---|---|---|---|
-**Center X (hr:min:sec of arc)** | 3:29:10.539 | 3:29:10.435 | 3:29:12.018 | 3:29:12.841 | 3:29:13.551 |
-**Center Y (degree, arcmin, arcsec)** | 31, 13, 30.886 | 31, 13, 32.096 | 31, 13, 7.975 | 31, 13, 6.854 | 21, 13, 58.143 |
 
+---|A1|A2|B1|B2|C
+---|---|---|---|---|---
+**Center X (hr:min:sec of arc)**|3:29:10.539|3:29:10.435|3:29:12.018|3:29:12.841|3:29:12.551
+**Center Y (degree, arcmin, arcsec)**|31, 13, 30.886|31, 13, 32.096|31, 13, 7.975|31, 13, 6.854|21, 13, 58.143
 
 N.B. The beam, width x height = 1x1 arcsecond for all regions
 
