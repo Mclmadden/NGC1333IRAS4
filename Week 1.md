@@ -79,3 +79,10 @@ casa #will not run if CASA isn't installed
 exportfits(imagename='NGC1333IRAS4A_CH3OH_line8.image', fitsimage='NGC1333IRAS4A_CH3OH_line8.fits')
 ```
 
+### Goals For Next Week
+
+Make a moment map from `CH3OH_line8` FITS file
+
+Plot methanol and ammonia spectra in python
+
+Average out all methanol and ammonia spectra to make super spectra
