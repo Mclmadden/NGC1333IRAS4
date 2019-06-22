@@ -67,9 +67,7 @@ No transitions were detected toward C.
 
 N.B. The beam, width x height = 1x1 arcsecond for all regions
 
-Saved spectra of each methanol and ammonia transition at protostars A1, A2, and B1 (with the exception of `NH3_11` spectra taken at protostars B2 and C in addition*) as FITS files in directory `NGC1333IRAS4_Spectra` under `Spectra_NH3` and `Spectra_CH3OH` respectively
-
-* `NH3_11` shows a positive detection toward protostar B2; `NH3_11` also appears to have an absorption line(?) in its spectrum at protostar C 
+Saved spectra of each methanol and ammonia transition at protostars A1, A2, and B1 (with the exception of `NH3_11` spectra taken at protostars B2 and C in addition) as FITS files in directory `NGC1333IRAS4_Spectra` under `Spectra_NH3` and `Spectra_CH3OH` respectively. `NH3_11` shows a positive detection toward protostar B2; `NH3_11` also appears to have an absorption line(?) in its spectrum at protostar C. 
 
 Used CASA's `exportfits` command to convert `CH3OH_line8` from an image to a FITS file:
 
