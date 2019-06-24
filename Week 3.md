@@ -10,7 +10,9 @@ from spectral_cube import SpectralCube
 #Read in FITS file
 cube = SpectralCube.read('NGC1333IRAS4A_CH3OH_lin8.fits')
 
-moment_0 = cube.moment(order=0)
-moment_1 = cube.moment(order=1)
-moment_2 = cube.moment(order =2)
+slab_1 = cube.spectral_slab(50 *u.km/u.s, 75 *u.km/u.s)
+
+moment_0 = slab_1.moment(order=0)
+moment_0.write('CH3OH_line8_1.fits', overwrite=True)
+
 ```
