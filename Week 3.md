@@ -1,6 +1,6 @@
 ### Monday - 6/24/19
 
-Made moment map of `CH3OH_line8` FITS file:
+Made moment maps for each of the three peaks shown in `CH3OH_line8` using its FITS file:
 
 ```python
 cd /lustre/aoc/students/mmadden/downlaods/NGC1333IRAS4A
@@ -23,3 +23,7 @@ chans=('range=[61km/s,65km/s]') #Third peak radio velocity range
 outfile='NGC1333IRAS4A_CH3OH_line8_m0p3.moment'
 immoments()
 ```
+
+Began reading Mark R. Krumholz's *Notes on Star Formation* review
+
+### Tuesday - 6/25/19
