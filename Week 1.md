@@ -16,7 +16,7 @@ casa #will not run if CASA isn't installed
 impbcor(imagename='NGC1333IRAS4A_contful_p0.image.tt0', pbimage='MGC1333IRAS4A_contful_p0.pb.tt0', outfile='NGC1333IRAS4A _contful_p0.pbcor')
 ```
 
-### Wednesday - 6/18/19
+### Wednesday - 6/19/19
 
 Used CASA Viewer to overlay contour map of reduced continuum with rastor images of `CH3OH_line8` and `NH3_33`
 
