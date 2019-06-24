@@ -10,10 +10,16 @@ taskname='immoments'
 default()
 imagename = 'NGC1333IRAS4A_CH3OH_line8.fits'
 moments=[0]
-axis='spectral'
-chans='1~5'
-includepix=[4,100]
-outfile='NGC1333IRAS4A_CH3OH_line8'
+chans=('range=[-6km/s,-2km/s]') #First peak radio velocity range
+includepix=[3.364e-3, 1e9]
+outfile='NGC1333IRAS4A_CH3OH_line8_m0p1.moment'
+immoments()
 
+chans=('range=[5km/s, 8km/s]') #Second peak radio velocity range
+outfile='NGC1333IRAS4A_CH3OH_line8_m0p2.moment'
+immoments()
+
+chans=('range=[61km/s,65km/s]') #Third peak radio velocity range
+outfile='NGC1333IRAS4A_CH3OH_line8_m0p3.moment'
 immoments()
 ```
