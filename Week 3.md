@@ -61,4 +61,8 @@ guesses = [amplitude_guess, center_guess, width_guess]
 sp.specfit(fittype='gaussian', guesses=guesses)
 ```
 
+Documentation:
+>https://pyspeckit.readthedocs.io/en/latest/fitting.html
+>https://pyspeckit.readthedocs.io/en/latest/example_fromscratch.html
+
 ### Wednesday - 6/26/19
