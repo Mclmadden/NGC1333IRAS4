@@ -11,7 +11,6 @@ Learned the basics of CASA Viewer, such as adding regions to take spectra diagra
 Used CASA's `impbcor` (primary beam correction) command to reduce the 1.4 cm wavelength continuum image:
 
 ```python
-cd /lustre/aoc/students/mmadden/downloads/prelim_files
 casa #will not run if CASA isn't installed
 impbcor(imagename='NGC1333IRAS4A_contful_p0.image.tt0', pbimage='MGC1333IRAS4A_contful_p0.pb.tt0', outfile='NGC1333IRAS4A _contful_p0.pbcor')
 ```
@@ -71,8 +70,7 @@ Saved spectra of each methanol and ammonia transition at protostars A1, A2, and 
 
 Used CASA's `exportfits` command to convert `CH3OH_line8` from an image to a FITS file:
 
-```python
-cd /lustre/aoc/students/mmadden/downloads/NGC1333IRAS4A 
+```python 
 casa #will not run if CASA isn't installed
 exportfits(imagename='NGC1333IRAS4A_CH3OH_line8.image', fitsimage='NGC1333IRAS4A_CH3OH_line8.fits')
 ```
