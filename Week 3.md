@@ -39,3 +39,20 @@ immoments()
 Began reading Mark R. Krumholz's *Notes on Star Formation* review
 
 ### Tuesday - 6/25/19
+
+Ran into trouble installing PySpecKit
+
+```python
+import numpy as np
+import pyspeckit as psk
+from astropy import units as u
+
+sp = psk.Spectrum('CH3OH_line8_B1.fits') #Reads FITS file into PySpecKit
+sp.plotter()
+
+amplitude_guess = 
+center_guess = 6 * u.km/u.s
+width_guess = 
+
+sp.specfit(fittype='gaussian')
+```
