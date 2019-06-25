@@ -16,7 +16,6 @@ Based ranges for `chan` off of aperture spectrum peaks:
 **Ranges (km/s)** | [-6, -2] | [5, 8] | [61, 65]
 
 ```python
-cd /lustre/aoc/students/mmadden/downlaods/NGC1333IRAS4A
 casa #will not run if CASA isn't installed
 
 taskname='immoments'
