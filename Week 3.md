@@ -42,6 +42,8 @@ Began reading Mark R. Krumholz's *Notes on Star Formation* review
 
 Ran into trouble installing PySpecKit
 
+Used PySpecKit to fit a Gaussian to spectrum of `CH3OH_line8` at protostar B1: 
+
 ```python
 import numpy as np
 import pyspeckit as psk
@@ -50,9 +52,10 @@ from astropy import units as u
 sp = psk.Spectrum('CH3OH_line8_B1.fits') #Reads FITS file into PySpecKit
 sp.plotter()
 
-amplitude_guess = 
-center_guess = 6 * u.km/u.s
-width_guess = 
+amplitude_guess = 5.5 * u.mJy/u.beam
+center_guess = 6.5 * u.km/u.s
+width_guess = 3 * u.km/u.s
+guesses = [amplitude_guess, center_guess, width_guess]
 
-sp.specfit(fittype='gaussian')
+sp.specfit(fittype='gaussian', guesses=guesses)
 ```
