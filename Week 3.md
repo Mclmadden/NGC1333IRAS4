@@ -52,6 +52,7 @@ from astropy import units as u
 sp = psk.Spectrum('CH3OH_line8_B1.fits') #Reads FITS file into PySpecKit
 sp.plotter()
 
+#Fit with input guesses 
 amplitude_guess = 5.5 * u.mJy/u.beam
 center_guess = 6.5 * u.km/u.s
 width_guess = 3 * u.km/u.s
@@ -59,3 +60,5 @@ guesses = [amplitude_guess, center_guess, width_guess]
 
 sp.specfit(fittype='gaussian', guesses=guesses)
 ```
+
+### Wednesday - 6/26/19
