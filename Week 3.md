@@ -52,7 +52,7 @@ from astropy import units as u
 sp = psk.Spectrum('CH3OH_line8_B1.fits') #Reads FITS file into PySpecKit
 sp.plotter()
 
-#Fit with input guesses 
+#Fit with input guesses from CASA Viewer spectrum at B1
 amplitude_guess = 5.5 * u.mJy/u.beam
 center_guess = 6.5 * u.km/u.s
 width_guess = 3 * u.km/u.s
@@ -65,5 +65,7 @@ Documentation:
 >https://pyspeckit.readthedocs.io/en/latest/fitting.html
 
 >https://pyspeckit.readthedocs.io/en/latest/example_fromscratch.html
+
+Read more of Krumholz's *Notes on Star Formation* review
 
 ### Wednesday - 6/26/19
