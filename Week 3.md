@@ -72,5 +72,7 @@ Became familiarized with Overleaf for future reference
 
 ### Wednesday - 6/26/19
 
+Read more of Krumholz's *Notes on Star Formation* review
+
 Moved Anaconda to a different directory and tried to download PySpecKit there
 
