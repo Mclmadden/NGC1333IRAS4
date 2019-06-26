@@ -78,3 +78,19 @@ Moved Anaconda to a different directory and successfully downloaded PySpecKit
 
 Tested yesterday's code, and there's an error with the units: `TypeError: only dimensionless scalar quantities can be converted to Python scalars`
 
+Tried automatic guesses to test fitting a Gaussian to data:
+
+```python
+import numpy as np
+import pyspeckit as psk
+from astropy import units as u
+
+sp = psk.Spectrum('CH3OH_line8_B1.fits')
+sp.plotter()
+
+sp.specfit(fittype='gaussian')
+```
+
+Above code worked, but returned message: `Legend.draggable() is deprecated in favor of Legend.set_draggable(). Legend.draggable may be reintroduced as a property in future releases.`
+
+Troubleshooting instructed to use `self.fitleg.set_draggable(True)`
