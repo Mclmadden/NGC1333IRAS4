@@ -93,4 +93,8 @@ sp.specfit(fittype='gaussian')
 
 Above code worked, but returned message: `Legend.draggable() is deprecated in favor of Legend.set_draggable(). Legend.draggable may be reintroduced as a property in future releases.`
 
-Troubleshooting instructed to use `self.fitleg.set_draggable(True)`
+Troubleshooting instructed to use `self.fitleg.set_draggable(True)` but unsure where to input as straight into `ipython` returns message: `NameError: name 'self' is not defined`
+
+Informed by PySpecKit creator Adam Ginsburg that PySpecKit doesn't work with astropy quatities, so guesses must be unitless, and Ginsburg sent latest development version that resolves the draggable issue
+
+### Thursday - 6/27/19
