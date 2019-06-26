@@ -42,7 +42,7 @@ Read parts of Eric Herbst's review *Complex Organic Interstellar Molecules*
 
 Read parts of Markus Pössel's review *A Beginner's Guide to Working with Astronomical Data* 
 
-### Goals for Next Week
+### Goals For Next Week
 
 Start looking at data in CASA Viewer
 
