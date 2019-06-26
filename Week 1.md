@@ -41,3 +41,13 @@ Introduced to CASA and CASA Viewer
 Read parts of Eric Herbst's review *Complex Organic Interstellar Molecules*
 
 Read parts of Markus Pössel's review *A Beginner's Guide to Working with Astronomical Data* 
+
+### Goals for Next Week
+
+Start looking at data in CASA Viewer
+
+Take spectra of methanol and ammonia transitions at protostars (especially A1, A2, and B1)
+
+Check for positive methanol detections in all transitions toward B1
+
+Learn Jupyter Lab/Notebook documentation
