@@ -106,7 +106,9 @@ import pyspeckit as psk
 sp = psk.Spectrum('CH3OH_line8_B1.fits')
 sp.plotter()
 
+#Amplitude = 5.5 mJy/beam, center = 6.5 km/s, width = 3 km/s
 guesses = [5.5, 6.5, 3]
+
 sp.specfit(fittype='gaussian', guesses=guesses)
 ```
 
