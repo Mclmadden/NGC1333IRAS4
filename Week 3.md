@@ -102,7 +102,6 @@ Updated code:
 ```python
 import numpy as np
 import pyspeckit as psk
-from astropy import units as u
 
 sp = psk.Spectrum('CH3OH_line8_B1.fits')
 sp.plotter()
