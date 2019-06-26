@@ -74,5 +74,7 @@ Became familiarized with Overleaf for future reference
 
 Read more of Krumholz's *Notes on Star Formation* review
 
-Moved Anaconda to a different directory and tried to download PySpecKit there
+Moved Anaconda to a different directory and successfully downloaded PySpecKit
+
+Tested yesterday's code, and there's an error with the units: `TypeError: only dimensionless scalar quantities can be converted to Python scalars`
 
