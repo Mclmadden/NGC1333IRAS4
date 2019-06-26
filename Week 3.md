@@ -40,7 +40,7 @@ Began reading Mark R. Krumholz's *Notes on Star Formation* review
 
 ### Tuesday - 6/25/19
 
-Had technical difficulties installing PySpecKit to fit a Gaussian to spectrum of `CH3OH_line8` at protostar B1
+Had technical difficulties installing PySpecKit, which would be used to fit a Gaussian to spectrum of `CH3OH_line8` at protostar B1
 
 Wrote code to test when the issue is resolved:
 
@@ -68,4 +68,9 @@ Documentation:
 
 Read more of Krumholz's *Notes on Star Formation* review
 
+Became familiarized with Overleaf for future reference
+
 ### Wednesday - 6/26/19
+
+Moved Anaconda to a different directory and tried to download PySpecKit there
+
