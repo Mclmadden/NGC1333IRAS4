@@ -135,6 +135,23 @@ sp.plotter()
 sp.specfit(fittype='gaussian', guesses=[5.5,5,3])
 ```
 
+Splatalogue information for `CH3OH_line15` and `CH3OH_line16` missing
+
+Updated table:
+
+Rest Frequency (MHz) | Frequency Error (MHz) | CDMS/JPL Intensity | Upper Level Energy (K)|---| Quantum Numbers |----------| Symmetry State | Species
+---|---|---|---|---|---|---|---|---
+  24928.7280  | 0.013  |  -5.9530 3  | 24.3097 | 28 | 325041404 | 3 2 2 1  |   3 1 2 1    |    CH3OH, vt=0-2
+  24933.5040  | 0.012  |  -5.8203 3  | 30.7644 | 36 | 325041404 | 4 2 3 1  |   4 1 3 1    |    CH3OH, vt=0-2
+  24934.4010  | 0.013  |  -6.1883 3  | 19.4686 | 20 | 325041404 | 2 2 1 1  |   2 1 1 1    |    CH3OH, vt=0-2
+  24959.1230  | 0.012  |  -5.7292 3  | 38.8326 | 44 | 325041404 | 5 2 4 1  |   5 1 4 1    |    CH3OH, vt=0-2
+  25018.1760  | 0.012  |  -5.6612 3  | 48.5142 | 52 | 325041404 | 6 2 5 1  |   6 1 5 1    |    CH3OH, vt=0-2
+  25124.9320  | 0.012  |  -5.6082 3  | 59.8092 | 60 | 325041404 | 7 2 6 1  |   7 1 6 1    |    CH3OH, vt=0-2
+  25294.4830  | 0.013  |  -5.5657 3  | 72.7174 | 68 | 325041404 | 8 2 7 1  |   8 1 7 1    |    CH3OH, vt=0-2
+  25541.4670  | 0.014  |  -5.5310 3  | 87.2386 | 76 | 325041404 | 9 2 8 1  |   9 1 8 1    |    CH3OH, vt=0-2
+  line15
+  line16
+
 Made plots of all methanol files
 
 ### Friday - 6/28/19
