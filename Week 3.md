@@ -133,3 +133,8 @@ sp.xarr.convert_to_unit(u.km/u.s, rest_value=24928.728 * u.MHz)
 
 sp.plotter()
 sp.specfit(fittype='gaussian', guesses=[5.5,5,3])
+```
+
+Made plots of all methanol files
+
+### Friday - 6/28/19
