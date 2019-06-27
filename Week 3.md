@@ -95,7 +95,7 @@ Above code worked, but returned message: `Legend.draggable() is deprecated in fa
 
 Troubleshooting instructed to use `self.fitleg.set_draggable(True)` but unsure where to input as straight into `ipython` returns message: `NameError: name 'self' is not defined`
 
-Informed by PySpecKit coauthor Adam Ginsburg that PySpecKit doesn't work with astropy quatities, so guesses must be unitless, and Ginsburg sent latest development version that resolves the draggable issue
+Informed by PySpecKit coauthor Adam Ginsburg that PySpecKit doesn't work with astropy quatities, so guesses must be unitless, and Ginsburg's latest development version resolves the draggable issue: `pip install https://github.com/pyspeckit/pyspeckit/archive/master.zip`
 
 Updated code:
 
@@ -113,3 +113,4 @@ sp.specfit(fittype='gaussian', guesses=guesses)
 ```
 
 ### Thursday - 6/27/19
+
