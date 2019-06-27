@@ -137,7 +137,7 @@ sp.specfit(fittype='gaussian', guesses=[5.5,5,3])
 sp.specfit.parinfo #Returns paramters: amplitude, center, width
 ```
 
-![alt text](plotCH3OH_line8.png)
+![alt text](plot_CH3OH_line8.png)
 
 Splatalogue information for `CH3OH_line15` and `CH3OH_line16` missing
 
@@ -153,8 +153,8 @@ Rest Frequency (MHz) | Frequency Error (MHz) | CDMS/JPL Intensity | Upper Level 
   25124.9320  | 0.012  |  -5.6082 3  | 59.8092 | 60 | 325041404 | 7 2 6 1  |   7 1 6 1    |    CH3OH, vt=0-2
   25294.4830  | 0.013  |  -5.5657 3  | 72.7174 | 68 | 325041404 | 8 2 7 1  |   8 1 7 1    |    CH3OH, vt=0-2
   25541.4670  | 0.014  |  -5.5310 3  | 87.2386 | 76 | 325041404 | 9 2 8 1  |   9 1 8 1    |    CH3OH, vt=0-2
-  25124.8640???
-  line16
+  25878.2700
+  26313.1200
 
 Made plots of all methanol files
 
