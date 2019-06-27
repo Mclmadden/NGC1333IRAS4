@@ -114,3 +114,22 @@ sp.specfit(fittype='gaussian', guesses=guesses)
 
 ### Thursday - 6/27/19
 
+Plot axes were off because the units need to be converted from velocity to frequency to velocity relative to each methanol transitions' rest frequency
+
+Gaussin fit wasn't appearing because `sp.plotter()` must preceed `sp.specfit()`
+
+Updated code:
+
+```python
+import numpy as np
+import pyspeckit as psk
+from astropy import units as u
+import pylab as pl
+pl.ion()
+
+sp = psk.Spectrum('CH3OH_line8_B1.fits')
+sp.xarr.convert_to_unit(u.MHz)
+sp.xarr.convert_to_unit(u.km/u.s, rest_value=24928.728 * u.MHz)
+
+sp.plotter()
+sp.specfit(fittype='gaussian', guesses=[5.5,5,3])
