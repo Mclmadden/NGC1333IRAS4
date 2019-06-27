@@ -79,6 +79,6 @@ exportfits(imagename='NGC1333IRAS4A_CH3OH_line8.image', fitsimage='NGC1333IRAS4A
 
 Make a moment map from `CH3OH_line8` FITS file
 
-Plot methanol and ammonia spectra in python
+Plot methanol spectra in python
 
-Average out all methanol and ammonia spectra to make super spectra
+Average out all methanol spectra to make super spectra
