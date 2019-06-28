@@ -157,6 +157,63 @@ Rest Frequency (MHz) | Frequency Error (MHz) | CDMS/JPL Intensity | Upper Level 
   25878.2390  | 0.024  |  -5.3415 3  |  
   26313.0930  | 0.025  |  -5.3186 3  |
 
-Made plots with Gaussian fits of all methanol files
+Made plots with Gaussian fits of all methanol files at protostar B1:
+
+```python
+import numpy as np
+import pyspeckit as psk
+from astropy import units as u
+import pylab as pl
+pl.ion()
+
+sp = psk.Spectrum('CH3OH_line8_B1.fits')
+sp.xarr.convert_to_unit(u.MHz)
+sp.xarr.convert_to_unit(u.km/u.s, rest_value=24928.728*u.MHz) 
+sp.plotter(title='CH3OH_line8', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.specfit(fittype='gaussian', guesses=[5.5e-3,5,3])
+
+sp = psk.Spectrum('CH3OH_line10_B1.fits')
+sp.xarr.convert_to_unit(u.MHz)
+sp.xarr.convert_to_unit(u.km/u.s, rest_value=24959.123*u.MHz) 
+sp.plotter(title='CH3OH_line10', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.specfit(fittype='gaussian', guesses=[5.5e-3,5,3])
+
+sp = psk.Spectrum('CH3OH_line11_B1.fits')
+sp.xarr.convert_to_unit(u.MHz)
+sp.xarr.convert_to_unit(u.km/u.s, rest_value=25018.176*u.MHz) 
+sp.plotter(title='CH3OH_line11', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.specfit(fittype='gaussian', guesses=[5.5e-3,5,3])
+
+sp = psk.Spectrum('CH3OH_line12_B1.fits')
+sp.xarr.convert_to_unit(u.MHz)
+sp.xarr.convert_to_unit(u.km/u.s, rest_value=25124.932*u.MHz) 
+sp.plotter(title='CH3OH_line12', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.specfit(fittype='gaussian', guesses=[5.5e-3,5,3])
+
+sp = psk.Spectrum('CH3OH_line13_B1.fits')
+sp.xarr.convert_to_unit(u.MHz)
+sp.xarr.convert_to_unit(u.km/u.s, rest_value=25294.483*u.MHz) 
+sp.plotter(title='CH3OH_line13', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.specfit(fittype='gaussian', guesses=[5.5e-3,5,3])
+
+sp = psk.Spectrum('CH3OH_line14_B1.fits')
+sp.xarr.convert_to_unit(u.MHz)
+sp.xarr.convert_to_unit(u.km/u.s, rest_value=25541.467*u.MHz) 
+sp.plotter(title='CH3OH_line14', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.specfit(fittype='gaussian', guesses=[5.5e-3,5,3])
+
+sp = psk.Spectrum('CH3OH_line15_B1.fits')
+sp.xarr.convert_to_unit(u.MHz)
+sp.xarr.convert_to_unit(u.km/u.s, rest_value=25878.239*u.MHz) 
+sp.plotter(title='CH3OH_line15', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.specfit(fittype='gaussian', guesses=[5.5e-3,5,3])
+
+sp = psk.Spectrum('CH3OH_line16_B1.fits')
+sp.xarr.convert_to_unit(u.MHz)
+sp.xarr.convert_to_unit(u.km/u.s, rest_value=26313.093*u.MHz) 
+sp.plotter(title='CH3OH_line16', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.specfit(fittype='gaussian', guesses=[5.5e-3,5,3])
+```
 
 ### Friday - 6/28/19
+
