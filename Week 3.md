@@ -213,7 +213,7 @@ Table of ammonia rest frequencies:
 
 ---| NH3 (1,1) | NH3 (2,2) | NH3 (3,3) | NH3 (4,4) | NH3 (5,5) | NH3 (6,6) | NH3 (7,7)
 ---|---|---|---|---|---|---|---
-**Rest Frequency (MHz)** |  23694.4955 | 23722.6333 | 23870.1292 | 24139.4163 | 24532.9887 | 25056.0250 | 25715.1820
+**Rest Freq. (MHz)** |  23694.4955 | 23722.6333 | 23870.1292 | 24139.4163 | 24532.9887 | 25056.0250 | 25715.1820
 
 Example code for ammonia plot with Gaussian fit on middle peak at protostar B1:
 
