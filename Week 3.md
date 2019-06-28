@@ -144,8 +144,8 @@ Splatalogue information for `CH3OH_line15` and `CH3OH_line16` missing:
 
 Methanol File | Rest Frequency (MHz) 
 ---|---
- **CH3OH_line15** | 25878.2390 
- **CH3OH_line16** | 26313.0930 
+ CH3OH_line15 | 25878.2390 
+ CH3OH_line16 | 26313.0930 
 
 Made plots with Gaussian fits of all methanol files at protostar B1:
 
