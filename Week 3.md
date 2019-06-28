@@ -208,3 +208,24 @@ sp.specfit(fittype='gaussian', guesses=[5.5e-3,5,3])
 ### Friday - 6/28/19
 
 Read more of Krumholz's *Notes on Star Formation* review
+
+Table of ammonia rest frequencies:
+
+---| NH3 (1,1) | NH3 (2,2) | NH3 (3,3) | NH3 (4,4) | NH3 (5,5) | NH3 (6,6) | NH3 (7,7)
+**Rest Frequency (MHz)** |  23694.4955 | 23722.6333 | 23870.1292 | 24139.4163 | 24532.9887 | 25056.0250 | 25715.1820
+
+Example code for ammonia plot with Gaussian fit on middle peak at protostar B1:
+
+```python
+import numpy as np
+import pyspeckit as psk
+from astropy import units as u
+import pylab as pl
+pl.ion()
+
+sp = psk.Spectrum('NH3_11_B1.fits')
+sp.xarr.convert_to_unit(u.MHz)
+sp.xarr.convert_to_unit(u.km/u.s, rest_value=23694.4955 * u.MHz)
+sp.plotter(title='NH3 (1,1)', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.specfit(fittype='gaussian', guesses=[12.09e-3,7,3])
+```
