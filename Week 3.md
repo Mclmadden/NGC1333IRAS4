@@ -211,7 +211,7 @@ Read more of Krumholz's *Notes on Star Formation* review
 
 Gaussian fit errors are all drastically off most likely because the fitter thinks the data noise is greater than it actually is
 
-Used Doppler Equation to calculate the velocity offsets of the two side transitions in `CH3OH_line8`
+Used Doppler Equation to calculate the velocity offsets of the two side transitions in `CH3OH_line8` and the reciprocal of variance, w
 
 Plot of `CH3OH_line8` with Gaussian fit over center peak (look at those standard deviations!):
 ![plot_CH3OH_line8](https://user-images.githubusercontent.com/23585856/60352608-683c6780-9985-11e9-9a8e-bb69b318e875.png)
@@ -223,9 +223,10 @@ Plot of `CH3OH_line8` with Gaussian fit over center peak (look at those standard
 **Offset (km/s)** | 10.8 | N/A | 57.5 
 **w (s/km)^2** | 8.57e-3 | N/A | 3.02e-4
 
-Offset = (Δrest freq./side rest freq.) * c
+Equations
+>Offset = (Δrest freq./side rest freq.) * c
 
-Reciprocal of variance, w = error^-2 
+>Reciprocal of variance, w = error^-2 
 
 ### Goals For Next Week
 
