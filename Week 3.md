@@ -127,7 +127,7 @@ from astropy import units as u
 import pylab as pl
 pl.ion()
 
-sp = psk.Spectrum('CH3OH_line8_B1.fits')
+sp = psk.Spectrum('CH3OH_line10_B1.fits')
 sp.xarr.convert_to_unit(u.MHz)
 sp.xarr.convert_to_unit(u.km/u.s, rest_value=24928.728 * u.MHz)
 
@@ -137,7 +137,8 @@ sp.specfit(fittype='gaussian', guesses=[5.5,5,3])
 sp.specfit.parinfo #Returns paramters: amplitude, center, width
 ```
 
-![Plot of `CH3OH_line8`](https://github.com/Mclmadden/master/NGC1333IRAS4/plot_CH3OH_line8.png)
+Plot of `CH3OH_line10`:
+![plot_CH3OH_line10](https://user-images.githubusercontent.com/23585856/60352618-6ffc0c00-9985-11e9-9e03-c8d26fe7077f.png)
 
 Splatalogue information for `CH3OH_line15` and `CH3OH_line16` missing
 
