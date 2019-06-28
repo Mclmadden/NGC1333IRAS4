@@ -129,7 +129,7 @@ pl.ion()
 
 sp = psk.Spectrum('CH3OH_line10_B1.fits')
 sp.xarr.convert_to_unit(u.MHz)
-sp.xarr.convert_to_unit(u.km/u.s, rest_value=24928.728 * u.MHz)
+sp.xarr.convert_to_unit(u.km/u.s, rest_value=24959.1230*u.MHz)
 
 sp.plotter()
 sp.specfit(fittype='gaussian', guesses=[5.5,5,3])
@@ -157,6 +157,6 @@ Rest Frequency (MHz) | Frequency Error (MHz) | CDMS/JPL Intensity | Upper Level 
   25878.2390  | 0.024  |  -5.3415 3  |  
   26313.0930  | 0.025  |  -5.3186 3  |
 
-Made plots of all methanol files
+Made plots with Gaussian fits of all methanol files
 
 ### Friday - 6/28/19
