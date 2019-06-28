@@ -131,7 +131,7 @@ sp = psk.Spectrum('CH3OH_line10_B1.fits')
 sp.xarr.convert_to_unit(u.MHz)
 sp.xarr.convert_to_unit(u.km/u.s, rest_value=24959.1230*u.MHz)
 
-sp.plotter()
+sp.plotter(title='CH3OH_line10', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
 sp.specfit(fittype='gaussian', guesses=[5.5,5,3])
 
 sp.specfit.parinfo #Returns paramters: amplitude, center, width
@@ -140,22 +140,12 @@ sp.specfit.parinfo #Returns paramters: amplitude, center, width
 Plot of `CH3OH_line10`:
 ![plot_CH3OH_line10](https://user-images.githubusercontent.com/23585856/60352618-6ffc0c00-9985-11e9-9e03-c8d26fe7077f.png)
 
-Splatalogue information for `CH3OH_line15` and `CH3OH_line16` missing
+Splatalogue information for `CH3OH_line15` and `CH3OH_line16` missing:
 
-Updated table:
-
-Rest Frequency (MHz) | Frequency Error (MHz) | CDMS/JPL Intensity | Upper Level Energy (K)|---| Quantum Numbers |----------| Symmetry State | Species
----|---|---|---|---|---|---|---|---
-  24928.7280  | 0.013  |  -5.9530 3  | 24.3097 | 28 | 325041404 | 3 2 2 1  |   3 1 2 1    |    CH3OH, vt=0-2
-  24933.5040  | 0.012  |  -5.8203 3  | 30.7644 | 36 | 325041404 | 4 2 3 1  |   4 1 3 1    |    CH3OH, vt=0-2
-  24934.4010  | 0.013  |  -6.1883 3  | 19.4686 | 20 | 325041404 | 2 2 1 1  |   2 1 1 1    |    CH3OH, vt=0-2
-  24959.1230  | 0.012  |  -5.7292 3  | 38.8326 | 44 | 325041404 | 5 2 4 1  |   5 1 4 1    |    CH3OH, vt=0-2
-  25018.1760  | 0.012  |  -5.6612 3  | 48.5142 | 52 | 325041404 | 6 2 5 1  |   6 1 5 1    |    CH3OH, vt=0-2
-  25124.9320  | 0.012  |  -5.6082 3  | 59.8092 | 60 | 325041404 | 7 2 6 1  |   7 1 6 1    |    CH3OH, vt=0-2
-  25294.4830  | 0.013  |  -5.5657 3  | 72.7174 | 68 | 325041404 | 8 2 7 1  |   8 1 7 1    |    CH3OH, vt=0-2
-  25541.4670  | 0.014  |  -5.5310 3  | 87.2386 | 76 | 325041404 | 9 2 8 1  |   9 1 8 1    |    CH3OH, vt=0-2
-  25878.2390  | 0.024  |  -5.3415 3  |  
-  26313.0930  | 0.025  |  -5.3186 3  |
+Methanol File | Rest Frequency (MHz) 
+---|---
+ **CH3OH_line15** | 25878.2390 
+ **CH3OH_line16** | 26313.0930 
 
 Made plots with Gaussian fits of all methanol files at protostar B1:
 
