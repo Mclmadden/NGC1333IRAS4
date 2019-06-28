@@ -209,24 +209,25 @@ sp.specfit(fittype='gaussian', guesses=[5.5e-3,5,3])
 
 Read more of Krumholz's *Notes on Star Formation* review
 
-Table of ammonia rest frequencies:
+Gaussian fit errors are all drastically off most likely because the fitter thinks the data noise is greater than it actually is
 
----| NH3 (1,1) | NH3 (2,2) | NH3 (3,3) | NH3 (4,4) | NH3 (5,5) | NH3 (6,6) | NH3 (7,7)
----|---|---|---|---|---|---|---
-**Rest Freq. (MHz)** |  23694.4955 | 23722.6333 | 23870.1292 | 24139.4163 | 24532.9887 | 25056.0250 | 25715.1820
+Used Doppler Equation to calculate the velocity offsets of the two side transitions in `CH3OH_line8`
 
-Example code for ammonia plot with Gaussian fit on middle peak at protostar B1:
+Plot of `CH3OH_line8` with Gaussian fit over center peak (look at those standard deviations!):
+![plot_CH3OH_line8](https://user-images.githubusercontent.com/23585856/60352608-683c6780-9985-11e9-9a8e-bb69b318e875.png)
 
-```python
-import numpy as np
-import pyspeckit as psk
-from astropy import units as u
-import pylab as pl
-pl.ion()
+---|Peak 1 | Peak 2 | Peak 3
+---|---|---|---
+**Centroid (km/s)** | -4.66584 | 7.54641 | 64.2864
+**Rest Freq. (MHz)** | 24934.4010 | 24933.5040 | 24928.7280
+**Offset** | 5.75e4 | N/A | 1.08e4 
 
-sp = psk.Spectrum('NH3_11_B1.fits')
-sp.xarr.convert_to_unit(u.MHz)
-sp.xarr.convert_to_unit(u.km/u.s, rest_value=23694.4955 * u.MHz)
-sp.plotter(title='NH3 (1,1)', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
-sp.specfit(fittype='gaussian', guesses=[12.09e-3,7,3])
-```
+Offset = (Δrest freq./side rest freq.) * c
+
+### Goals For Next Week
+
+Calculate weighted arithmetic means of spectra centroids and widths
+
+Find a way to tell `specfit()` to maintain new parameters 
+
+Correct plot y-axes from Jy/beam to K using `radio_beam` package in PySpecKit 
