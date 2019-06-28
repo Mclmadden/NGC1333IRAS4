@@ -127,12 +127,12 @@ from astropy import units as u
 import pylab as pl
 pl.ion()
 
-sp = psk.Spectrum('CH3OH_line10_B1.fits')
-sp.xarr.convert_to_unit(u.MHz)
-sp.xarr.convert_to_unit(u.km/u.s, rest_value=24959.1230*u.MHz)
+sp = psk.Spectrum('CH3OH_line10_B1.fits') #Reads in methanol FITS file
+sp.xarr.convert_to_unit(u.MHz) #Converts from spectrum velocity to frequency
+sp.xarr.convert_to_unit(u.km/u.s, rest_value=24959.1230*u.MHz) #Converts back to velocity relative to methanol transition's rest frequency
 
-sp.plotter(title='CH3OH_line10', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
-sp.specfit(fittype='gaussian', guesses=[5.5,5,3])
+sp.plotter(title='CH3OH_line10', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam') #Makes plot with title and axis labels
+sp.specfit(fittype='gaussian', guesses=[5.5,5,3]) #Fits gaussian to plot
 
 sp.specfit.parinfo #Returns paramters: amplitude, center, width
 ```
