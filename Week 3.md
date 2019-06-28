@@ -137,7 +137,7 @@ sp.specfit(fittype='gaussian', guesses=[5.5,5,3])
 sp.specfit.parinfo #Returns paramters: amplitude, center, width
 ```
 
-![Plot of `CH3OH_line8`](https://github.com/Mclmadden/repository/NGC1333IRAS4/plot_CH3OH_line8.png)
+![Plot of `CH3OH_line8`](https://github.com/Mclmadden/master/NGC1333IRAS4/plot_CH3OH_line8.png)
 
 Splatalogue information for `CH3OH_line15` and `CH3OH_line16` missing
 
