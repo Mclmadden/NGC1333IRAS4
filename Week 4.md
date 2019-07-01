@@ -8,9 +8,9 @@ Calculated the weighted averages of side peak centroids and widths in `CH3OH_lin
 
 Weighted Arithmetic Mean = Σ(x * w)/Σ(w)
 
-> Weighted Width = 2.82 km/s 
+> Weighted Width =  
 
-> Weighted Centroid = -2.32 km/s 
+> Weighted Centroid =  
 
 ### Tuesday - 7/2
 
