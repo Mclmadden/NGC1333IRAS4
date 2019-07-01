@@ -221,7 +221,7 @@ Plot of `CH3OH_line8` with Gaussian fit over center peak (look at those standard
 **Centroid (km/s)** | -4.66584 | 7.54641 | 64.2864
 **Width (km/s)** | 2.63033 | 4.69701 | 8.2667 
 **Rest Freq. (MHz)** | 24934.4010 | 24933.5040 | 24928.7280
-**Offset (km/s)** | 10.8 | N/A | 57.5 
+**Offset (km/s)** | -10.8 | N/A | 57.5 
 **w (s/km)^2** | 8.57e-3 | N/A | 3.02e-4
 
 Equations
