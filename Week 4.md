@@ -17,6 +17,7 @@ Calculated actual centroids of the side peaks in `CH3OH_line8` using the offsets
 > **Old Centroid (km/s)** | -4.66584 | 7.54641 | 64.2864
 > **Centroid (km/s)** | 6.13416 | 7.54641 | 6.7864 
 
+Must find a way to input minimum/maximum values for guesses in PySpecKit (possibly within `specfit()` or `Spectrum()`) that would correct for the absurdly large sigma values in original plots 
 
 ### Wednesday - 7/3
 
