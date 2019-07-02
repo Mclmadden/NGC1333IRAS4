@@ -19,6 +19,8 @@ Calculated actual centroids of the side peaks in `CH3OH_line8` using the offsets
 
 Must find a way to input minimum/maximum values for guesses in PySpecKit (possibly within `specfit()` or `Spectrum()`) that would correct for the absurdly large sigma values in original plots 
 
+Began reading A.G.G.M. Tielens' *The Molecular Universe* review
+
 ### Wednesday - 7/3
 
 
