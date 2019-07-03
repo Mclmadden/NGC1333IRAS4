@@ -153,18 +153,18 @@ sp.plotter(title='CH3OH_line8', xlabel='Radio Velocity (km/s)', ylabel='Jy / bea
 sp.specfit(fittype='gaussian', guesses=[5e-3,-5e-3,1,5.5e-3,7,1,5e-3,64,1], minpars=[3e-3,-10,0], maxpars=[10e-3,80,5])
 ```
 
-Methanol File | RMS (J/bm) |  Amplitude (J/bm) | Amplitude σ (J/bm) | Centroid (km/s) | Centroid σ (km/s) | Width (km/s) | Width σ (km/s) 
+Methanol File | RMS (J/bm) |  Amplitude (J/bm) | Amplitude σ (J/bm) | Centroid (km/s) | Width (km/s) | Centroid and Width σ (km/s) 
 ---|---|---|---|---|---|---|---
-`CH3OH_line8` P1 | 0.001226577966979845 | 3.39e-3 | 5.5e-4 | 6.7864 | 0.15 | 0.80 | 0.15 
-`CH3OH_line8` P2 | " | 4.58e-3 | 5.6e-4 | 6.91 | 0.11 | 0.77 | 0.11 
-`CH3OH_line8` P3 | " | 4.94e-3 | 6.4e-4 | 6.13416 | 0.087 | 0.580 | 0.087
-`CH3OH_line10` | 0.00067419757514329 | 5.11e-3 | 3.4e-4 | 6.804 | 0.049 | 0.641 | 0.049 
-`CH3OH_line11` | 0.0009809577191390697 | 3.60e-3 | 4.1e-4 | 6.99 | 0.12 | 0.92 | 0.12 
-`CH3OH_line12` | 0.0009926948354418738 | 4.89e-3 | 4.6e-4 | 6.85 | 0.08 | 0.73 | 0.08 
-`CH3OH_line13` | 0.0007554915723677119 | 4.58e-3 | 3.2e-4 | 6.930 | 0.69 | 0.848 | 0.69 
-`CH3OH_line14` | 0.001265012668199331 | 4.86e-3 | 5.4e-4 | 6.84 | 0.11 | 0.86 | 0.11
-`CH3OH_line15` | 0.0010646074902382063 | 3.81e-3 | 4.3e-4 | 7.00 | 0.12 | 0.92 | 0.12
-`CH3OH_line16` | 0.0011710828501256556 | 4.18e-3 | 6.1e-4 | 6.659 | 0.093 | 0.551 | 0.093 
+`CH3OH_line8` P1 | 0.001226577966979845 | 3.39e-3 | 5.5e-4 | 6.7864 | 0.80 | 0.15 
+`CH3OH_line8` P2 | " | 4.58e-3 | 5.6e-4 | 6.91 | 0.77 | 0.11 
+`CH3OH_line8` P3 | " | 4.94e-3 | 6.4e-4 | 6.13416 | 0.580 | 0.087
+`CH3OH_line10` | 0.00067419757514329 | 5.11e-3 | 3.4e-4 | 6.804 | 0.641 | 0.049 
+`CH3OH_line11` | 0.0009809577191390697 | 3.60e-3 | 4.1e-4 | 6.99 | 0.92 | 0.12 
+`CH3OH_line12` | 0.0009926948354418738 | 4.89e-3 | 4.6e-4 | 6.85 | 0.73 | 0.08 
+`CH3OH_line13` | 0.0007554915723677119 | 4.58e-3 | 3.2e-4 | 6.930 | 0.848 | 0.69 
+`CH3OH_line14` | 0.001265012668199331 | 4.86e-3 | 5.4e-4 | 6.84 | 0.86 | 0.11
+`CH3OH_line15` | 0.0010646074902382063 | 3.81e-3 | 4.3e-4 | 7.00 | 0.92 | 0.12
+`CH3OH_line16` | 0.0011710828501256556 | 4.18e-3 | 6.1e-4 | 6.659 | 0.551 | 0.093 
 
 N.B. There doesn't seem to be an apparent linear pattern to the RMS by methanol transition
 
@@ -176,5 +176,12 @@ Calculated weighted means for the data's centroid and width:
 
 > Weighted Width = Σ(weights * σ^-2)/Σ(σ^-2) = 0.646 km/s
 
+> Weighted Uncertainty = Σ(σ * σ^-2)/Σ(σ^-2) = 0.0838 km/s
+
+Read more of Tielens *The Molecular Universe* review
+
 ### Goals For Next Week
 
+Make scatter plot of the amplitudes to check for any pattern
+
+Stack all methanol spectra using weighted means of centroid, width, and uncertainty to make one large superspectrum  
