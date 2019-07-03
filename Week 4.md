@@ -160,10 +160,9 @@ Calculated weighted means for the data's centroid and width:
 
 Weighted Arithmetic Mean = Σ(x * w)/Σ(w)
 
-> Weighted Width =  
+> Weighted Centroid = 6.75 km/s
 
-> Weighted Centroid = 
-
+> Weighted Width = 0.646 km/s
 
 ### Goals For Next Week
 
