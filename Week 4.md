@@ -140,6 +140,18 @@ sp.plotter(title='CH3OH_line16', xlabel='Radio Velocity (km/s)', ylabel='Intensi
 sp.specfit(fittype='gaussian', guesses=[5.5e-3,7,1], minpars=[0,0,0], maxpars=[1e-2,10,5])
 ```
 
+Fit all three peaks in `CH3OH_line8` in order to correct the standard deviations and find the widths for peaks 1 and 3, which are required for calculating the weighted means:
+
+```python
+sp = psk.Spectrum('CH3OH_line8_B1.fits')
+sp.xarr.convert_to_unit(u.MHz)
+sp.xarr.convert_to_unit(u.km/u.s, rest_value=24928.728*u.MHz) 
+rms = np.std(sp.data[0:50])
+sp.error[:] = rms
+sp.plotter(title='CH3OH_line8', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+
+sp.specfit(fittype='gaussian', guesses=[5e-3,-5e-3,1,5.5e-3,7,1,5e-3,64,1], minpars=[3e-3,-10,0], maxpars=[10e-3,80,5])
+```
 
 Methanol File | RMS (J/bm) |  Amplitude (J/bm) | Amplitude σ (J/bm) | Centroid (km/s) | Centroid σ (km/s) | Width (km/s) | Width σ (km/s)
 ---|---|---|---|---|---|---|---
