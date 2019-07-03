@@ -19,19 +19,13 @@ Calculated actual centroids of the side peaks in `CH3OH_line8` using the offsets
 
 Must find a way to input minimum/maximum values for guesses in PySpecKit (possibly within `specfit()` or `Spectrum()`) that would correct for the absurdly large sigma values in original plots 
 
-Found possible solution with `rms` and `minpars`/`maxpars`:
+Found possible solution with `rms` and `minpars`/`maxpars` (example lacks necessary code):
 
 ```python
-sp = psk.Spectrum('CH3OH_line16_B1.fits')
-
 #rms = np.std(sp.data[])
 rms = sqrt(sum(vals**2)/N)
 sp.error[:] = rms
 
-sp.xarr.convert_to_unit(u.MHz)
-sp.xarr.convert_to_unit(u.km/u.s, rest_value=26313.093*u.MHz)
-
-sp.plotter(title='CH3OH_line16', xlabel='Radio Velocity (km/s)', ylabel='Intensity (Jy/bm)')
 sp.specfit(fittype='gaussian', guesses=[5.5e-3,5,3], minpars=[4e-3,4,2], maxpars[8e-3,8,8]) 
 ```
 
@@ -39,6 +33,44 @@ Began reading A.G.G.M. Tielens' *The Molecular Universe* review
 
 ### Wednesday - 7/3
 
+Tried `rms` and adjusted `minpars`/`maxpars` to manually input parameters and changed `guesses` to fit actual amplitude/centroid/width values of data:
 
+```python
+import numpy as np
+import pyspeckit as psk
+import math
+from astropy import units as u
+import pylab as pl
+pl.ion()
+
+sp.psk.Spectrum('CH3OH_line16_B1.fits')
+
+sp.xarr.convert_to_unit(u.MHz)
+sp.xarr.convert_to_unit(u.km/u.s, rest_value=26313.093*u.MHz) 
+
+rms = math.sqrt(sum(vals**2/N)
+sp.error[:] = rms
+
+sp.plotter(title='CH3OH_line16', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.specfit(fittype='gaussian', guesses=[5.5e-3,7,1], minpars=[0,0,0], maxpars=[1e-2,10,5]) 
+```
+
+Remade Gaussian fits for all methanol files:
+
+```python
+import numpy as np
+import pyspeckit as psk
+import math
+from astropy import units as u
+import pylab as pl
+pl.ion()
+
+sp.psk.Spectrum('CH3OH_line8_B1.fits')
+sp.xarr.convert_to_unit(u.MHz)
+sp.xarr.convert_to_unit(u.km/u.s, rest_value=24928.728*u.MHz) 
+sp.plotter(title='CH3OH_line16', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.specfit(fittype='gaussian', guesses=[5.5e-3,7,1], minpars=[0,0,0], maxpars=[1e-2,10,5]) 
+```
 
 ### Goals For Next Week
+
