@@ -153,7 +153,7 @@ sp.plotter(title='CH3OH_line8', xlabel='Radio Velocity (km/s)', ylabel='Jy / bea
 sp.specfit(fittype='gaussian', guesses=[5e-3,-5e-3,1,5.5e-3,7,1,5e-3,64,1], minpars=[3e-3,-10,0], maxpars=[10e-3,80,5])
 ```
 
-Methanol File | RMS (J/bm) |  Amplitude (J/bm) | Amplitude σ (J/bm) | Centroid (km/s) | Centroid σ (km/s) | Width (km/s) | Width σ (km/s)
+Methanol File | RMS (J/bm) |  Amplitude (J/bm) | Amplitude σ (J/bm) | Centroid (km/s) | Centroid σ (km/s) | Width (km/s) | Width σ (km/s) 
 ---|---|---|---|---|---|---|---
 `CH3OH_line8` P1 | 0.001226577966979845 | 3.39e-3 | 5.5e-4 | 6.7864 | 0.15 | 0.80 | 0.15 
 `CH3OH_line8` P2 | " | 4.58e-3 | 5.6e-4 | 6.91 | 0.11 | 0.77 | 0.11 
@@ -170,11 +170,11 @@ N.B. There doesn't seem to be an apparent linear pattern to the RMS by methanol 
 
 Calculated weighted means for the data's centroid and width:
 
-Weighted Arithmetic Mean = Σ(x * w)/Σ(w)
+**Weighted Arithmetic Mean = Σ(x * σ^-2)/Σ(σ^-2)**
 
-> Weighted Centroid = 6.75 km/s
+> Weighted Centroid = Σ(centroids * σ^-2)/Σ(σ^-2) = 6.75 km/s 
 
-> Weighted Width = 0.646 km/s
+> Weighted Width = Σ(weights * σ^-2)/Σ(σ^-2) = 0.646 km/s
 
 ### Goals For Next Week
 
