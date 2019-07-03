@@ -55,7 +55,7 @@ sp.specfit(fittype='gaussian', guesses=[5.5e-3,7,1], minpars=[0,0,0], maxpars=[1
 ```
 
 Plot of `CH3OH_line16` with adjusted standard deviations:
-
+![corplot_CH3OH_line16](https://user-images.githubusercontent.com/23585856/60627897-d5e4fb00-9dac-11e9-9517-a68f34d8b4f5.png)
 
 Refit all methanol files:
 
