@@ -67,22 +67,22 @@ from astropy import units as u
 import pylab as pl
 pl.ion()
 
-sp.psk.Spectrum('CH3OH_line8_B1.fits')
+sp = psk.Spectrum('CH3OH_line8_B1.fits')
 sp.xarr.convert_to_unit(u.MHz)
 sp.xarr.convert_to_unit(u.km/u.s, rest_value=24928.728*u.MHz) 
 rms = np.std(sp.data[0:50])
 sp.error[:] = rms
 print(rms)
-sp.plotter(title='CH3OH_line16', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
-sp.specfit(fittype='gaussian', guesses=[5.5e-3,7,1], minpars=[3e-3,0,0], maxpars=[10e-3,15,5]]) 
+sp.plotter(title='CH3OH_line8', xlabel='Radio Velocity (km/s)', ylabel='Intensity (Jy/bm)')
+sp.specfit(fittype='gaussian', guesses=[5.5e-3,7,1], minpars=[3e-3,0,0], maxpars=[10e-3,15,5]) 
 
-sp.psk.Spectrum('CH3OH_line10_B1.fits')
+sp = psk.Spectrum('CH3OH_line10_B1.fits')
 sp.xarr.convert_to_unit(u.MHz)
 sp.xarr.convert_to_unit(u.km/u.s, rest_value=24959.123*u.MHz) 
 rms = np.std(sp.data[0:50])
 sp.error[:] = rms
 print(rms)
-sp.plotter(title='CH3OH_line16', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.plotter(title='CH3OH_line10', xlabel='Radio Velocity (km/s)', ylabel='Intensity (Jy/bm)')
 sp.specfit(fittype='gaussian', guesses=[5.5e-3,7,1], minpars=[0,0,0], maxpars=[1e-2,10,5]) 
 
 sp = psk.Spectrum('CH3OH_line11_B1.fits')
@@ -91,7 +91,7 @@ sp.xarr.convert_to_unit(u.km/u.s, rest_value=25018.176*u.MHz)
 rms = np.std(sp.data[0:50])
 sp.error[:] = rms
 print(rms)
-sp.plotter(title='CH3OH_line11', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.plotter(title='CH3OH_line11', xlabel='Radio Velocity (km/s)', ylabel='Intensity (Jy/bm)')
 sp.specfit(fittype='gaussian', guesses=[5.5e-3,7,1], minpars=[0,0,0], maxpars=[1e-2,10,5])
 
 sp = psk.Spectrum('CH3OH_line12_B1.fits')
@@ -100,7 +100,7 @@ sp.xarr.convert_to_unit(u.km/u.s, rest_value=25124.932*u.MHz)
 rms = np.std(sp.data[0:50])
 sp.error[:] = rms
 print(rms)
-sp.plotter(title='CH3OH_line12', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.plotter(title='CH3OH_line12', xlabel='Radio Velocity (km/s)', ylabel='Intensity (Jy/bm)')
 sp.specfit(fittype='gaussian', guesses=[5.5e-3,7,1], minpars=[0,0,0], maxpars=[1e-2,10,5])
 
 sp = psk.Spectrum('CH3OH_line13_B1.fits')
@@ -109,7 +109,7 @@ sp.xarr.convert_to_unit(u.km/u.s, rest_value=25294.483*u.MHz)
 rms = np.std(sp.data[0:50])
 sp.error[:] = rms
 print(rms)
-sp.plotter(title='CH3OH_line13', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.plotter(title='CH3OH_line13', xlabel='Radio Velocity (km/s)', ylabel='Intensity (Jy/bm)')
 sp.specfit(fittype='gaussian', guesses=[5.5e-3,7,1], minpars=[0,0,0], maxpars=[1e-2,10,5])
 
 sp = psk.Spectrum('CH3OH_line14_B1.fits')
@@ -118,7 +118,7 @@ sp.xarr.convert_to_unit(u.km/u.s, rest_value=25541.467*u.MHz)
 rms = np.std(sp.data[0:50])
 sp.error[:] = rms
 print(rms)
-sp.plotter(title='CH3OH_line14', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.plotter(title='CH3OH_line14', xlabel='Radio Velocity (km/s)', ylabel='Intensity (Jy/bm)')
 sp.specfit(fittype='gaussian', guesses=[5.5e-3,7,1], minpars=[0,0,0], maxpars=[1e-2,10,5])
 
 sp = psk.Spectrum('CH3OH_line15_B1.fits')
@@ -127,7 +127,7 @@ sp.xarr.convert_to_unit(u.km/u.s, rest_value=25878.239*u.MHz)
 rms = np.std(sp.data[0:50])
 sp.error[:] = rms
 print(rms)
-sp.plotter(title='CH3OH_line15', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.plotter(title='CH3OH_line15', xlabel='Radio Velocity (km/s)', ylabel='Intensity (Jy/bm)')
 sp.specfit(fittype='gaussian', guesses=[5.5e-3,7,1], minpars=[0,0,0], maxpars=[1e-2,10,5])
 
 sp = psk.Spectrum('CH3OH_line16_B1.fits')
@@ -136,9 +136,10 @@ sp.xarr.convert_to_unit(u.km/u.s, rest_value=26313.093*u.MHz)
 rms = np.std(sp.data[0:50])
 sp.error[:] = rms
 print(rms)
-sp.plotter(title='CH3OH_line16', xlabel='Radio Velocity (km/s)', ylabel='Jy / beam')
+sp.plotter(title='CH3OH_line16', xlabel='Radio Velocity (km/s)', ylabel='Intensity (Jy/bm)')
 sp.specfit(fittype='gaussian', guesses=[5.5e-3,7,1], minpars=[0,0,0], maxpars=[1e-2,10,5])
 ```
+
 
 Methanol File | RMS (J/bm) | Amplitude σ (J/bm) | Centroid σ (km/s) | Width σ (km/s)
 ---|---|---|---|---
@@ -150,6 +151,17 @@ Methanol File | RMS (J/bm) | Amplitude σ (J/bm) | Centroid σ (km/s) | Width σ
 `CH3OH_line14` | 0.001265012668199331 | 5.4e-4 | 0.11 | 0.11
 `CH3OH_line15` | 0.0010646074902382063 | 4.3e-4 | 0.12 | 0.12
 `CH3OH_line16` | 0.0011710828501256556 | 6.1e-4 | 0.093 | 0.093 
+
+N.B. There doesn't seem to be an apparent linear pattern to the RMS by methanol transition
+
+Calculated weighted means for the data's centroid and width:
+
+Weighted Arithmetic Mean = Σ(x * w)/Σ(w)
+
+> Weighted Width =  
+
+> Weighted Centroid = 
+
 
 ### Goals For Next Week
 
