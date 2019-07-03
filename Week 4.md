@@ -57,7 +57,7 @@ sp.specfit(fittype='gaussian', guesses=[5.5e-3,7,1], minpars=[0,0,0], maxpars=[1
 Plot of `CH3OH_line16` with adjusted standard deviations:
 ![corplot_CH3OH_line16](https://user-images.githubusercontent.com/23585856/60627897-d5e4fb00-9dac-11e9-9517-a68f34d8b4f5.png)
 
-Refit all methanol files:
+Refitted all methanol files:
 
 ```python
 import numpy as np
@@ -154,7 +154,7 @@ sp.specfit(fittype='gaussian', guesses=[5e-3,-5e-3,1,5.5e-3,7,1,5e-3,64,1], minp
 ```
 
 Methanol File | RMS (J/bm) |  Amplitude (J/bm) | Amplitude σ (J/bm) | Centroid (km/s) | Width (km/s) | Centroid and Width σ (km/s) 
----|---|---|---|---|---|---|---
+---|---|---|---|---|---|---
 `CH3OH_line8` P1 | 0.001226577966979845 | 3.39e-3 | 5.5e-4 | 6.7864 | 0.80 | 0.15 
 `CH3OH_line8` P2 | " | 4.58e-3 | 5.6e-4 | 6.91 | 0.77 | 0.11 
 `CH3OH_line8` P3 | " | 4.94e-3 | 6.4e-4 | 6.13416 | 0.580 | 0.087
@@ -168,7 +168,7 @@ Methanol File | RMS (J/bm) |  Amplitude (J/bm) | Amplitude σ (J/bm) | Centroid 
 
 N.B. There doesn't seem to be an apparent linear pattern to the RMS by methanol transition
 
-Calculated weighted means for the data's centroid and width:
+Calculated weighted means for the data's centroid, width, and uncertainty:
 
 **Weighted Arithmetic Mean = Σ(x * σ^-2)/Σ(σ^-2)**
 
@@ -176,7 +176,7 @@ Calculated weighted means for the data's centroid and width:
 
 > Weighted Width = Σ(weights * σ^-2)/Σ(σ^-2) = 0.646 km/s
 
-> Weighted Uncertainty = Σ(σ * σ^-2)/Σ(σ^-2) = 0.0838 km/s
+> Weighted Uncertainty = (sqrt(Σ(σ^-2)))^-1 = 0.0292 km/s
 
 Read more of Tielens *The Molecular Universe* review
 
