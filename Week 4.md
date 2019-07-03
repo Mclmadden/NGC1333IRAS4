@@ -142,7 +142,7 @@ sp.specfit(fittype='gaussian', guesses=[5.5e-3,7,1], minpars=[0,0,0], maxpars=[1
 
 
 Methanol File | RMS (J/bm) |  Amplitude (J/bm) | Amplitude σ (J/bm) | Centroid (km/s) | Centroid σ (km/s) | Width (km/s) | Width σ (km/s)
----|---|---|---|---
+---|---|---|---|---|---|---|---
 `CH3OH_line8` | 0.001226577966979845 | 4.58e-3 | 5.6e-4 | 6.91 | 0.11 | 0.77 | 0.11 
 `CH3OH_line10` | 0.00067419757514329 | 5.11e-3 | 3.4e-4 | 6.804 | 0.049 | 0.641 | 0.049 
 `CH3OH_line11` | 0.0009809577191390697 | 3.60e-3 | 4.1e-4 | 6.99 | 0.12 | 0.92 | 0.12 
