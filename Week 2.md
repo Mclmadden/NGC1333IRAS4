@@ -27,7 +27,7 @@ Received remaining methanol and ammonia data reduced by Brian Svoboda
 
 **Q-Branch Transitions of Methanol Data:**
 
-Rest Frequency (MHz) |---|--------------| Upper Level Energy (K)|---| Quantum Numbers |----------| Symmetry State |---
+Rest Frequency (MHz) |---|--------------| Upper Level Energy (K)|---| Quantum Numbers | Upper Symmetry State | Lower Symmetry State |---
 ---|---|---|---|---|---|---|---|---
   24928.7280  | 0.013  |  -5.9530 3  | 24.3097 | 28 | 325041404 | 3 2 2 1  |   3 1 2 1    |    CH3OH, vt=0-2
   24933.5040  | 0.012  |  -5.8203 3  | 30.7644 | 36 | 325041404 | 4 2 3 1  |   4 1 3 1    |    CH3OH, vt=0-2
