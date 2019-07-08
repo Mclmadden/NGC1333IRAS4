@@ -17,7 +17,7 @@ Plotted amplitudes of methanol data and J quantum numbers adding error bars:
 
 ```python
 x = [2,3,4,5,6,7,8,9,10,11]
-y = [4.94,3.39,4.58,5.11,3.60,4.89,4.58,4.86,3.81,4.18] #Rearranged from table order to go in increasing J QNs
+y = [4.94,3.39,4.58,5.11,3.60,4.89,4.58,4.86,3.81,4.18] #Rearranged from table to increase in J QNs
 ampl_err = [0.55,0.56,0.64,0.34,0.41,0.46,0.32,0.54,0.43,0.61]
 
 plt.plot(x,y,'o',color='black') 
