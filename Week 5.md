@@ -17,7 +17,7 @@ Plotted amplitudes of methanol data and J quantum numbers adding error bars:
 
 ```python
 x = [2,3,4,5,6,7,8,9,10,11]
-y = [4.94,3.39,4.58,5.11,3.60,4.89,4.58,4.86,3.81,4.18]
+y = [4.94,3.39,4.58,5.11,3.60,4.89,4.58,4.86,3.81,4.18] #Rearranged from table order to go in increasing J QNs
 ampl_err = [0.55,0.56,0.64,0.34,0.41,0.46,0.32,0.54,0.43,0.61]
 
 plt.plot(x,y,'o',color='black') 
@@ -28,7 +28,8 @@ plt.xlabel('Quantum Number')
 plt.ylabel('Amplitude (mJ/bm)') 
 ```
 
-![J_v_ampl](https://user-images.githubusercontent.com/23585856/60836898-0ef1e680-a184-11e9-864b-97be711bb86c.png)
+![JQN_v_ampl](https://user-images.githubusercontent.com/23585856/60837521-9a1fac00-a185-11e9-94b1-614e8cb1a628.png)
+
 
 ### Tuesday - 7/9
 
