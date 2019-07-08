@@ -30,7 +30,6 @@ plt.ylabel('Amplitude (mJ/bm)')
 
 ![JQN_v_ampl](https://user-images.githubusercontent.com/23585856/60843140-110f7180-a193-11e9-9f83-e1f61427f7a6.png)
 
-
 ### Tuesday - 7/9
 
 ### Wednesday - 7/10
