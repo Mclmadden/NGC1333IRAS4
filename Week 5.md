@@ -16,6 +16,9 @@ Methanol File | J Quantum Number
 Plotted methanol transition J quantum numbers vs. amplitudes, including error bars:
 
 ```python
+import matplotlib.pyplot as plt
+plt.ion()
+
 #Rearrange y and ampl_err so that JQNs are in increasing order
 x = [2,3,4,5,6,7,8,9,10,11]
 y = [3.39,4.94,4.58,5.11,3.60,4.89,4.58,4.86,3.81,4.18] 
@@ -58,6 +61,47 @@ Learned the proper axes units for a rotation diagram
 > y-axis: natural log of column density of upper limit over g of upper limit, ln(Nu/gu) (cm^-2)
 
 ### Wednesday - 7/10
+
+Changed x-axis of methanol plot to Energy of Upper Limit (K):
+
+```python
+import matplotlib.pyplot as plt
+plt.ion()
+
+x = [29.21,36.17,45.46,57.07,71.00,87.26,105.84,126.74,149.97,175.53]
+y = [4.94,3.39,4.58,5.11,3.60,4.89,4.58,4.86,3.81,4.18] #rearranged from table order to increase J QNs
+ampl_err = [0.64,0.55,0.56,0.34,0.41,0.46,0.32,0.54,0.43,0.61]
+
+plt.plot(x,y,'o',color='black') 
+plt.axis([0,180,0,6])
+plt.errorbar(x,y,xerr=None,yerr=ampl_err,fmt='none',ecolor='blue')
+plt.title('CH3OH Energy of Upper Limit vs. Amplitude')
+plt.xlabel('$E_U$ (K)')
+plt.ylabel('Amplitude (mJ/bm)')
+```
+
+![EU_ampl](https://user-images.githubusercontent.com/23585856/60983718-b2afd380-a2f7-11e9-8eb5-32cba9ce4617.png)
+
+Used CASA's `imhead` and `header` tasks to get beam sizes for methanol files
+
+Example using `CH3OH_line8`:
+
+```python
+casa #will not run if CASA isn't installed
+header = imhead('NHC1333IRAS4A_CH3OH_line8.image',mode='summary')
+header['perplanebeams']['beams']['*0']['*0']['major']['value']
+```
+
+Methanol File | Beam Size (arcsec)
+---|---
+`CH3OH_line8` | 1.0007993958627737
+`CH3OH_line10` | 0.9697425365447998
+`CH3OH_line11` | 0.9680445194244385
+`CH3OH_line12` | 0.9767780900001526
+`CH3OH_line13` | 0.9611411094665527
+`CH3OH_line14` | 1.0004248467414423
+`CH3OH_line15` | 0.9594455361366272
+`CH3OH_line16` | 0.9355015754699707
 
 ### Thursday - 7/11
 
