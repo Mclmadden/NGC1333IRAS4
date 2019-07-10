@@ -101,44 +101,44 @@ from radio_beam import Beam
 from astropy import units as u
 
 b8_3 = Beam(1.0007993958627737*u.arcsec)
-atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,24.928728*u.GHz)) #Uses rest frequency of transition
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8_3,24.928728*u.GHz)) #Uses rest frequency of transition
 rtemp = atemp*(1/0.3)*(1/0.6879) #Multiply by aperture_area/source_area and max_peak/mean_value
 print(rtemp)
 
 b8_2 = Beam(1.0007993958627737*u.arcsec)
-atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,24.933504*u.GHz))
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8_2,24.933504*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6879)
 
 b8_1 = Beam(1.0007993958627737*u.arcsec)
-atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,24.934401*u.GHz))
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8_1,24.934401*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6879)
 
 b10 = Beam(0.9697425365447998*u.arcsec)
-atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,24.9959123*u.GHz))
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b10,24.9959123*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6879)
 
 b11 = Beam(0.9680445194244385*u.arcsec)
-atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,25.018176*u.GHz))
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b11,25.018176*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6879)
 
 b12 = Beam(0.9767780900001526*u.arcsec)
-atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,25.124932*u.GHz))
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b12,25.124932*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6879)
 
 b13 = Beam(0.9611411094665527*u.arcsec)
-atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,25.294483*u.GHz))
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b13,25.294483*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6879)
 
 b14 = Beam(1.0004248467414423*u.arcsec)
-atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,25.541467*u.GHz))
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b14,25.541467*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6879)
 
 b15 = Beam(0.9594455361366272*u.arcsec)
-atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,25.878239*u.GHz))
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b15,25.878239*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6879)
 
 b16 = Beam(0.9355015754699707*u.arcsec)
-atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,26.313093*u.GHz))
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b16,26.313093*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6879) 
 ```
 
@@ -147,13 +147,13 @@ Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperatu
 `CH3OH_line8` P3 | 1.0007993958627737 | 0.6879 | 9.5142
 `CH3OH_line8` P2 | " | " | 9.5106
 `CH3OH_line8` P1 | " | " | 9.5099
-`CH3OH_line10` | 0.9697425365447998 | 0.6878 | 9.4632
-`CH3OH_line11` | 0.9680445194244385 | 0.6864 | 9.4463
-`CH3OH_line12` | 0.9767780900001526 | 0.6886 | 9.3662
-`CH3OH_line13` | 0.9611411094665527 | 0.6824 | 9.2411
-`CH3OH_line14` | 1.0004248467414423 | 0.6797 | 9.0632
-`CH3OH_line15` | 0.9594455361366272 | 0.6722 | 8.8289
-`CH3OH_line16` | 0.9355015754699707 | 0.6645 | 8.5395 
+`CH3OH_line10` | 0.9697425365447998 | 0.6878 | 10.0790
+`CH3OH_line11` | 0.9680445194244385 | 0.6864 | 10.0964
+`CH3OH_line12` | 0.9767780900001526 | 0.6886 | 9.8325
+`CH3OH_line13` | 0.9611411094665527 | 0.6824 | 10.0194
+`CH3OH_line14` | 1.0004248467414423 | 0.6797 | 9.0700
+`CH3OH_line15` | 0.9594455361366272 | 0.6722 | 9.6063
+`CH3OH_line16` | 0.9355015754699707 | 0.6645 | 9.7732 
 
 ### Thursday - 7/11
 
