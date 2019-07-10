@@ -92,16 +92,18 @@ header = imhead('NHC1333IRAS4A_CH3OH_line8.image',mode='summary')
 header['perplanebeams']['beams']['*0']['*0']['major']['value']
 ```
 
-Methanol File | Beam Size (arcsec)
----|---
-`CH3OH_line8` | 1.0007993958627737
-`CH3OH_line10` | 0.9697425365447998
-`CH3OH_line11` | 0.9680445194244385
-`CH3OH_line12` | 0.9767780900001526
-`CH3OH_line13` | 0.9611411094665527
-`CH3OH_line14` | 1.0004248467414423
-`CH3OH_line15` | 0.9594455361366272
-`CH3OH_line16` | 0.9355015754699707
+Used CASA Viewer to get mean value of region at psf files
+
+Methanol File | Beam Size (arcsec) | Mean Value (unitless)
+---|---|---
+`CH3OH_line8` | 1.0007993958627737 | 0.6879
+`CH3OH_line10` | 0.9697425365447998 | 0.6878
+`CH3OH_line11` | 0.9680445194244385 | 0.6864
+`CH3OH_line12` | 0.9767780900001526 | 0.6886
+`CH3OH_line13` | 0.9611411094665527 | 0.6824
+`CH3OH_line14` | 1.0004248467414423 | 0.6797
+`CH3OH_line15` | 0.9594455361366272 | 0.6722
+`CH3OH_line16` | 0.9355015754699707 | 0.6645
 
 ### Thursday - 7/11
 
