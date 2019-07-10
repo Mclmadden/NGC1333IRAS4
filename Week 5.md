@@ -101,7 +101,7 @@ from radio_beam import Beam
 from astropy import units as u
 
 b8_3 = Beam(1.0007993958627737*u.arcsec)
-atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8_3,24.928728*u.GHz)) #Uses rest frequency of transition
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8_3,24.928728*u.GHz)) #Uses rest frequency 
 rtemp = atemp*(1/0.3)*(1/0.6879) #Multiply by aperture_area/source_area and max_peak/mean_value
 print(rtemp)
 
@@ -155,7 +155,7 @@ Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperatu
 `CH3OH_line13` | 0.9611411094665527 | 0.6824 | 10.1002 | 8.5649
 `CH3OH_line14` | 1.0004248467414423 | 0.6797 | 9.1794 | 7.8943 
 `CH3OH_line15` | 0.9594455361366272 | 0.6722 | 9.8307 | 9.0442
-`CH3OH_line16` | 0.9355015754699707 | 0.6645 | 10.1173 | 5.575
+`CH3OH_line16` | 0.9355015754699707 | 0.6645 | 10.1173 | 5.5746
 
 ### Thursday - 7/11
 
