@@ -94,7 +94,7 @@ header['perplanebeams']['beams']['*0']['*0']['major']['value']
 
 Used CASA Viewer to get mean values of regions in psf files 
 
-Used PySpecKit's `radio_beam` package to convert y-axis from amplitude (mJ/bm) to radiative temperature (K):
+Used PySpecKit's `radio_beam` package to convert y-axis from amplitude (mJ/bm) to radiative temperature (K), and multiplied radiative temperature by each transition's width to get the area under the Gaussian curve:
 
 ```python
 from radio_beam import Beam
@@ -103,46 +103,54 @@ from astropy import units as u
 b8_3 = Beam(1.0007993958627737*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8_3,24.928728*u.GHz)) #Uses rest frequency 
 rtemp = atemp*(1/0.3)*(1/0.6879) #Multiply by aperture_area/source_area and max_peak/mean_value
-print(rtemp)
+area8_3 = (0.86*u.km/u.s)*rtemp
+print(rtemp,area8_3)
 
 b8_2 = Beam(1.0007993958627737*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8_2,24.933504*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6879)
+print(rtemp,area8_2)
 
 b8_1 = Beam(1.0007993958627737*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8_1,24.934401*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6879)
+print(rtemp,area8_1)
 
 b10 = Beam(0.9697425365447998*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b10,24.9959123*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6878)
+print(rtemp,area10)
 
 b11 = Beam(0.9680445194244385*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b11,25.018176*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6864)
+print(rtemp,area11)
 
 b12 = Beam(0.9767780900001526*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b12,25.124932*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6886)
+print(rtemp,area12)
 
 b13 = Beam(0.9611411094665527*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b13,25.294483*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6824)
+print(rtemp,area13)
 
 b14 = Beam(1.0004248467414423*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b14,25.541467*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6797)
+print(rtemp,area14)
 
 b15 = Beam(0.9594455361366272*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b15,25.878239*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6722)
+print(rtemp,area15)
 
 b16 = Beam(0.9355015754699707*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b16,26.313093*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6645) 
+print(rtemp,area16)
 ```
-
-Calculated areas under each Gaussian curve = FWHM * peak 
 
 Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperature (K) | Area Under Curve (K.km/s)  
 ---|---|---|---|---
