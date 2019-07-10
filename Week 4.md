@@ -174,7 +174,7 @@ Calculated weighted means for the data's centroid, width, and uncertainty:
 
 > Weighted Centroid = Σ(centroids * σ^-2)/Σ(σ^-2) = 6.75 km/s 
 
-> Weighted Width = Σ(weights * σ^-2)/Σ(σ^-2) = 0.646 km/s
+> Weighted Width = Σ(widths * σ^-2)/Σ(σ^-2) = 0.646 km/s
 
 > Weighted Uncertainty = (sqrt(Σ(σ^-2)))^-1 = 0.0292 km/s
 
