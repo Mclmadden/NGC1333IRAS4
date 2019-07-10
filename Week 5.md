@@ -69,7 +69,7 @@ import matplotlib.pyplot as plt
 plt.ion()
 
 x = [29.21,36.17,45.46,57.07,71.00,87.26,105.84,126.74,149.97,175.53]
-y = [4.94,3.39,4.58,5.11,3.60,4.89,4.58,4.86,3.81,4.18] #rearranged from table order to increase J QNs
+y = [4.94,3.39,4.58,5.11,3.60,4.89,4.58,4.86,3.81,4.18] 
 ampl_err = [0.64,0.55,0.56,0.34,0.41,0.46,0.32,0.54,0.43,0.61]
 
 plt.plot(x,y,'o',color='black') 
@@ -142,20 +142,24 @@ atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b16,26.313093*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6645) 
 ```
 
-Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperature (K)
----|---|---|---
-`CH3OH_line8` P3 | 1.0007993958627737 | 0.6879 | 9.5142
-`CH3OH_line8` P2 | " | " | 9.5106
-`CH3OH_line8` P1 | " | " | 9.5099
-`CH3OH_line10` | 0.9697425365447998 | 0.6878 | 10.0804
-`CH3OH_line11` | 0.9680445194244385 | 0.6864 | 10.1184
-`CH3OH_line12` | 0.9767780900001526 | 0.6886 | 9.8225
-`CH3OH_line13` | 0.9611411094665527 | 0.6824 | 10.1002
-`CH3OH_line14` | 1.0004248467414423 | 0.6797 | 9.1794
-`CH3OH_line15` | 0.9594455361366272 | 0.6722 | 9.8307
-`CH3OH_line16` | 0.9355015754699707 | 0.6645 | 10.1173 
+Calculated areas under each Gaussian curve = FWHM * peak 
+
+Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperature (K) | Area Under Curve (K.km/s)  
+---|---|---|---|---
+`CH3OH_line8` P3 | 1.0007993958627737 | 0.6879 | 9.5142 | 7.6114 
+`CH3OH_line8` P2 | " | " | 9.5106 | 7.3231 
+`CH3OH_line8` P1 | " | " | 9.5099 | 7.6079
+`CH3OH_line10` | 0.9697425365447998 | 0.6878 | 10.0804 | 6.4616
+`CH3OH_line11` | 0.9680445194244385 | 0.6864 | 10.1184 | 9.3090 
+`CH3OH_line12` | 0.9767780900001526 | 0.6886 | 9.8225 | 7.1705
+`CH3OH_line13` | 0.9611411094665527 | 0.6824 | 10.1002 | 8.5649
+`CH3OH_line14` | 1.0004248467414423 | 0.6797 | 9.1794 | 7.8943 
+`CH3OH_line15` | 0.9594455361366272 | 0.6722 | 9.8307 | 9.0442
+`CH3OH_line16` | 0.9355015754699707 | 0.6645 | 10.1173 | 5.575
 
 ### Thursday - 7/11
+
+N.B. Shortened work day because of EMRTC tour!
 
 ### Friday - 7/12
 
