@@ -154,7 +154,7 @@ print(rtemp,area16)
 
 Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperature (K) | Width (km/s) | Area Under Curve (K.km/s)  
 ---|---|---|---|---|---
-`CH3OH_line8` P3 | 1.0007993958627737 | 0.6879 | 9.5142 | 0.580 | 7.6114 
+`CH3OH_line8` P3 | 1.0007993958627737 | 0.6879 | 9.5142 | 0.58 | 5.5182 
 `CH3OH_line8` P2 | " | " | 9.5106 | 0.77 | 7.3231 
 `CH3OH_line8` P1 | " | " | 9.5099 | 0.80 | 7.6079
 `CH3OH_line10` | 0.9697425365447998 | 0.6878 | 10.0804 | 0.641 | 6.4616
