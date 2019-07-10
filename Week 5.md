@@ -40,9 +40,9 @@ Read more of Tielens' *The Molecular Universe* review
 
 Read more of Tielens' *The Molecular Universe* review
 
-Upper and lower energy limits of methanol transitions according to SLAIM data on Splatalogue:
+Upper and lower energy levels of methanol transitions according to SLAIM data on Splatalogue:
 
-Methanol File | Energy of Upper Limit (K) | Energy of Lower Limit (K) 
+Methanol File | Energy of Upper Level (K) | Energy of Lower Limit (K) 
 ---|---|---
 `CH3OH_line8` P1 | 29.20804 | 28.01139
 `CH3OH_line8` P2 | 45.45889 | 44.26228
@@ -62,7 +62,7 @@ Learned the proper axes units for a rotation diagram
 
 ### Wednesday - 7/10
 
-Changed x-axis of methanol plot to Energy of Upper Limit (K):
+Changed x-axis of methanol plot to Energy of Upper Level (K):
 
 ```python
 import matplotlib.pyplot as plt
@@ -75,12 +75,12 @@ ampl_err = [0.64,0.55,0.56,0.34,0.41,0.46,0.32,0.54,0.43,0.61]
 plt.plot(x,y,'o',color='black') 
 plt.axis([0,180,0,6])
 plt.errorbar(x,y,xerr=None,yerr=ampl_err,fmt='none',ecolor='blue')
-plt.title('CH3OH Energy of Upper Limit vs. Amplitude')
+plt.title('CH3OH Energy of Upper Level vs. Amplitude')
 plt.xlabel('$E_U$ (K)')
 plt.ylabel('Amplitude (mJ/bm)')
 ```
 
-![EU_ampl](https://user-images.githubusercontent.com/23585856/60983718-b2afd380-a2f7-11e9-8eb5-32cba9ce4617.png)
+![EU_ampl](https://user-images.githubusercontent.com/23585856/61002076-11884380-a31e-11e9-9320-7b7856128f17.png)
 
 Used CASA's `imhead` and `header` tasks to get beam sizes for methanol files
 
@@ -94,16 +94,18 @@ header['perplanebeams']['beams']['*0']['*0']['major']['value']
 
 Used CASA Viewer to get mean value of region at psf files
 
-Methanol File | Beam Size (arcsec) | Mean Value (unitless)
----|---|---
-`CH3OH_line8` | 1.0007993958627737 | 0.6879
-`CH3OH_line10` | 0.9697425365447998 | 0.6878
-`CH3OH_line11` | 0.9680445194244385 | 0.6864
-`CH3OH_line12` | 0.9767780900001526 | 0.6886
-`CH3OH_line13` | 0.9611411094665527 | 0.6824
-`CH3OH_line14` | 1.0004248467414423 | 0.6797
-`CH3OH_line15` | 0.9594455361366272 | 0.6722
-`CH3OH_line16` | 0.9355015754699707 | 0.6645
+Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperature (K)
+---|---|---|---
+`CH3OH_line8` P3 | 1.0007993958627737 | 0.6879 | 9.51422
+`CH3OH_line8` P2 | " | " | 9.51058
+`CH3OH_line8` P1 | " | " | 9.50989
+`CH3OH_line10` | 0.9697425365447998 | 0.6878 | 9.46315
+`CH3OH_line11` | 0.9680445194244385 | 0.6864 | 9.44631
+`CH3OH_line12` | 0.9767780900001526 | 0.6886 | 9.36621
+`CH3OH_line13` | 0.9611411094665527 | 0.6824 | 9.24106
+`CH3OH_line14` | 1.0004248467414423 | 0.6797 | 9.06321
+`CH3OH_line15` | 0.9594455361366272 | 0.6722 | 8.82885
+`CH3OH_line16` | 0.9355015754699707 | 0.6645 | 8.53945 
 
 Used PySpecKit's `radio_beam` package to convert y-axis from amplitude (mJ/bm) to radiative temperature (K):
 
@@ -111,10 +113,46 @@ Used PySpecKit's `radio_beam` package to convert y-axis from amplitude (mJ/bm) t
 from radio_beam import Beam
 from astropy import units as u
 
-b8 = Beam(1.0007993958627737*u.arcsec)
-atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,24.928728*u.GHz))
-rtemp = atemp*(1/0.3)*(1/0.6879) #multiplies by aperture_area/source_area and max_peak/mean_value
+b8_3 = Beam(1.0007993958627737*u.arcsec)
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,24.928728*u.GHz)) #Uses rest frequency of transition
+rtemp = atemp*(1/0.3)*(1/0.6879) #Multiply by aperture_area/source_area and max_peak/mean_value
 print(rtemp)
+
+b8_2 = Beam(1.0007993958627737*u.arcsec)
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,24.933504*u.GHz))
+rtemp = atemp*(1/0.3)*(1/0.6879)
+
+b8_1 = Beam(1.0007993958627737*u.arcsec)
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,24.934401*u.GHz))
+rtemp = atemp*(1/0.3)*(1/0.6879)
+
+b10 = Beam(0.9697425365447998*u.arcsec)
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,24.9959123*u.GHz))
+rtemp = atemp*(1/0.3)*(1/0.6879)
+
+b11 = Beam(0.9680445194244385*u.arcsec)
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,25.018176*u.GHz))
+rtemp = atemp*(1/0.3)*(1/0.6879)
+
+b12 = Beam(0.9767780900001526*u.arcsec)
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,25.124932*u.GHz))
+rtemp = atemp*(1/0.3)*(1/0.6879)
+
+b13 = Beam(0.9611411094665527*u.arcsec)
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,25.294483*u.GHz))
+rtemp = atemp*(1/0.3)*(1/0.6879)
+
+b14 = Beam(1.0004248467414423*u.arcsec)
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,25.541467*u.GHz))
+rtemp = atemp*(1/0.3)*(1/0.6879)
+
+b15 = Beam(0.9594455361366272*u.arcsec)
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,25.878239*u.GHz))
+rtemp = atemp*(1/0.3)*(1/0.6879)
+
+b16 = Beam(0.9355015754699707*u.arcsec)
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,26.313093*u.GHz))
+rtemp = atemp*(1/0.3)*(1/0.6879) 
 ```
 
 ### Thursday - 7/11
