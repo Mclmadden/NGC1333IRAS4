@@ -105,6 +105,18 @@ Methanol File | Beam Size (arcsec) | Mean Value (unitless)
 `CH3OH_line15` | 0.9594455361366272 | 0.6722
 `CH3OH_line16` | 0.9355015754699707 | 0.6645
 
+Used PySpecKit's `radio_beam` package to convert y-axis from amplitude (mJ/bm) to radiative temperature (K):
+
+```python
+from radio_beam import Beam
+from astropy import units as u
+
+b8 = Beam(1.0007993958627737*u.arcsec)
+atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,24.928728*u.GHz))
+rtemp = atemp*(1/0.3)*(1/0.6879) #multiplies by aperture_area/source_area and max_peak/mean_value
+print(rtemp)
+```
+
 ### Thursday - 7/11
 
 ### Friday - 7/12
