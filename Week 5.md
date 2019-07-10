@@ -92,20 +92,7 @@ header = imhead('NHC1333IRAS4A_CH3OH_line8.image',mode='summary')
 header['perplanebeams']['beams']['*0']['*0']['major']['value']
 ```
 
-Used CASA Viewer to get mean value of region at psf files
-
-Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperature (K)
----|---|---|---
-`CH3OH_line8` P3 | 1.0007993958627737 | 0.6879 | 9.51422
-`CH3OH_line8` P2 | " | " | 9.51058
-`CH3OH_line8` P1 | " | " | 9.50989
-`CH3OH_line10` | 0.9697425365447998 | 0.6878 | 9.46315
-`CH3OH_line11` | 0.9680445194244385 | 0.6864 | 9.44631
-`CH3OH_line12` | 0.9767780900001526 | 0.6886 | 9.36621
-`CH3OH_line13` | 0.9611411094665527 | 0.6824 | 9.24106
-`CH3OH_line14` | 1.0004248467414423 | 0.6797 | 9.06321
-`CH3OH_line15` | 0.9594455361366272 | 0.6722 | 8.82885
-`CH3OH_line16` | 0.9355015754699707 | 0.6645 | 8.53945 
+Used CASA Viewer to get mean values of regions in psf files 
 
 Used PySpecKit's `radio_beam` package to convert y-axis from amplitude (mJ/bm) to radiative temperature (K):
 
@@ -154,6 +141,19 @@ b16 = Beam(0.9355015754699707*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8,26.313093*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6879) 
 ```
+
+Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperature (K)
+---|---|---|---
+`CH3OH_line8` P3 | 1.0007993958627737 | 0.6879 | 9.5142
+`CH3OH_line8` P2 | " | " | 9.5106
+`CH3OH_line8` P1 | " | " | 9.5099
+`CH3OH_line10` | 0.9697425365447998 | 0.6878 | 9.4632
+`CH3OH_line11` | 0.9680445194244385 | 0.6864 | 9.4463
+`CH3OH_line12` | 0.9767780900001526 | 0.6886 | 9.3662
+`CH3OH_line13` | 0.9611411094665527 | 0.6824 | 9.2411
+`CH3OH_line14` | 1.0004248467414423 | 0.6797 | 9.0632
+`CH3OH_line15` | 0.9594455361366272 | 0.6722 | 8.8289
+`CH3OH_line16` | 0.9355015754699707 | 0.6645 | 8.5395 
 
 ### Thursday - 7/11
 
