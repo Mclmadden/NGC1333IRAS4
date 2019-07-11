@@ -162,7 +162,7 @@ Calculated full width at half maximum (FWHM) to calculate the areas under the Ga
 Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperature (K) | Area Under Curve (K.km/s)  
 ---|---|---|---|---
 `CH3OH_line8` P3 | 1.0007993958627737 | 0.6879 | 31.7141 | 48.2476
-`CH3OH_line8` P2 | " | " | 31.70192| 48.2291
+`CH3OH_line8` P2 | " | " | 31.7019| 48.2291
 `CH3OH_line8` P1 | " | " | 31.6996 | 48.2256
 `CH3OH_line10` | 0.9697425365447998 | 0.6878 | 33.6015 | 51.1190
 `CH3OH_line11` | 0.9680445194244385 | 0.6864 | 33.7281 | 51.3116
