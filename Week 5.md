@@ -102,75 +102,75 @@ from astropy import units as u
 
 b8_3 = Beam(1.0007993958627737*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8_3,24.928728*u.GHz)) #Uses rest frequency 
-rtemp = atemp*(1/0.3)*(1/0.6879) #Multiply by aperture_area/source_area and max_peak/mean_value
+rtemp = atemp*(1/0.6879)*((1/0.3)**2) #Multiply by max_peak/mean_value and (aperture_area/source_area)^2
 print(rtemp)
 
 b8_2 = Beam(1.0007993958627737*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8_2,24.933504*u.GHz))
-rtemp = atemp*(1/0.3)*(1/0.6879)
+rtemp = atemp*(1/0.6879)*((1/0.3)**2)
 print(rtemp)
 
 b8_1 = Beam(1.0007993958627737*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8_1,24.934401*u.GHz))
-rtemp = atemp*(1/0.3)*(1/0.6879)
+rtemp = atemp*(1/0.6879)*((1/0.3)**2)
 print(rtemp)
 
 b10 = Beam(0.9697425365447998*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b10,24.9959123*u.GHz))
-rtemp = atemp*(1/0.3)*(1/0.6878)
+rtemp = atemp*(1/0.6878)*((1/0.3)**2)
 print(rtemp)
 
 b11 = Beam(0.9680445194244385*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b11,25.018176*u.GHz))
-rtemp = atemp*(1/0.3)*(1/0.6864)
+rtemp = atemp*(1/0.6864)*((1/0.3)**2)
 print(rtemp)
 
 b12 = Beam(0.9767780900001526*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b12,25.124932*u.GHz))
-rtemp = atemp*(1/0.3)*(1/0.6886)
+rtemp = atemp*(1/0.6886)*((1/0.3)**2)
 print(rtemp)
 
 b13 = Beam(0.9611411094665527*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b13,25.294483*u.GHz))
-rtemp = atemp*(1/0.3)*(1/0.6824)
+rtemp = atemp*(1/0.6824)*((1/0.3)**2)
 print(rtemp)
 
 b14 = Beam(1.0004248467414423*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b14,25.541467*u.GHz))
-rtemp = atemp*(1/0.3)*(1/0.6797)
+rtemp = atemp*(1/0.6797)*((1/0.3)**2)
 print(rtemp)
 
 b15 = Beam(0.9594455361366272*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b15,25.878239*u.GHz))
-rtemp = atemp*(1/0.3)*(1/0.6722)
+rtemp = atemp*(1/0.6722)*((1/0.3)**2)
 print(rtemp)
 
 b16 = Beam(0.9355015754699707*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b16,26.313093*u.GHz))
-rtemp = atemp*(1/0.3)*(1/0.6645) 
+rtemp = atemp*(1/0.6645)*((1/0.3)**2)
 print(rtemp)
 ```
 ### Thursday - 7/11
 
 N.B. Shortened work day because of EMRTC tour!
 
-Calculated full width at half maximum (FWHM) to find area under the Gaussian curves:
-> FWHM (km/s) = 2.355 * width 
+Calculated full width at half maximum (FWHM) to calculate the areas under the Gaussian curves:
+> FWHM (km/s) = 2.355 * weighted width = 2.355 * 0.646 = 1.521 km/s 
 
 > Area (K.km/s) = FWHM * radiative temperature 
 
-Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperature (K) | Width (km/s) | FWHM (km/s) | Area Under Curve (K.km/s)  
----|---|---|---|---|---|---
-`CH3OH_line8` P3 | 1.0007993958627737 | 0.6879 | 9.5142 | 0.58 | 1.37 | 13.00 
-`CH3OH_line8` P2 | " | " | 9.5106 | 0.77 | 1.81 | 17.2460 
-`CH3OH_line8` P1 | " | " | 9.5099 | 0.80 | 1.88 | 17.9166
-`CH3OH_line10` | 0.9697425365447998 | 0.6878 | 10.0804 | 0.641 | 1.51 | 15.22
-`CH3OH_line11` | 0.9680445194244385 | 0.6864 | 10.1184 | 0.92 | 2.17 | 21.92 
-`CH3OH_line12` | 0.9767780900001526 | 0.6886 | 9.8225 | 0.73 | 1.72 | 16.89
-`CH3OH_line13` | 0.9611411094665527 | 0.6824 | 10.1002 | 0.848 | 2.00 | 20.17
-`CH3OH_line14` | 1.0004248467414423 | 0.6797 | 9.1794 | 0.86 | 2.03 | 18.59 
-`CH3OH_line15` | 0.9594455361366272 | 0.6722 | 9.8307 | 0.92 | 2.17 | 21.30
-`CH3OH_line16` | 0.9355015754699707 | 0.6645 | 10.1173 | 0.551 | 1.30 | 13.13
+Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperature (K) | Area Under Curve (K.km/s)  
+---|---|---|---|---
+`CH3OH_line8` P3 | 1.0007993958627737 | 0.6879 | 9.5142 | 48.2476
+`CH3OH_line8` P2 | " | " | 9.5106 | 48.2291
+`CH3OH_line8` P1 | " | " | 9.5099 | 48.2256
+`CH3OH_line10` | 0.9697425365447998 | 0.6878 | 10.0804 | 51.1190
+`CH3OH_line11` | 0.9680445194244385 | 0.6864 | 10.1184 | 51.3116
+`CH3OH_line12` | 0.9767780900001526 | 0.6886 | 9.8225 | 49.8111
+`CH3OH_line13` | 0.9611411094665527 | 0.6824 | 10.1002 | 51.2189
+`CH3OH_line14` | 1.0004248467414423 | 0.6797 | 9.1794 | 46.5497
+`CH3OH_line15` | 0.9594455361366272 | 0.6722 | 9.8307 | 49.8524
+`CH3OH_line16` | 0.9355015754699707 | 0.6645 | 10.1173 | 51.3059
 
 ### Friday - 7/12
 
