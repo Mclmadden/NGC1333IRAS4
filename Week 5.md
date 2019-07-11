@@ -103,72 +103,77 @@ from astropy import units as u
 b8_3 = Beam(1.0007993958627737*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8_3,24.928728*u.GHz)) #Uses rest frequency 
 rtemp = atemp*(1/0.3)*(1/0.6879) #Multiply by aperture_area/source_area and max_peak/mean_value
-area8_3 = (0.86*u.km/u.s)*rtemp
-print(rtemp,area8_3)
+print(rtemp)
 
 b8_2 = Beam(1.0007993958627737*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8_2,24.933504*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6879)
-print(rtemp,area8_2)
+print(rtemp)
 
 b8_1 = Beam(1.0007993958627737*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b8_1,24.934401*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6879)
-print(rtemp,area8_1)
+print(rtemp)
 
 b10 = Beam(0.9697425365447998*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b10,24.9959123*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6878)
-print(rtemp,area10)
+print(rtemp)
 
 b11 = Beam(0.9680445194244385*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b11,25.018176*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6864)
-print(rtemp,area11)
+print(rtemp)
 
 b12 = Beam(0.9767780900001526*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b12,25.124932*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6886)
-print(rtemp,area12)
+print(rtemp)
 
 b13 = Beam(0.9611411094665527*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b13,25.294483*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6824)
-print(rtemp,area13)
+print(rtemp)
 
 b14 = Beam(1.0004248467414423*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b14,25.541467*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6797)
-print(rtemp,area14)
+print(rtemp)
 
 b15 = Beam(0.9594455361366272*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b15,25.878239*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6722)
-print(rtemp,area15)
+print(rtemp)
 
 b16 = Beam(0.9355015754699707*u.arcsec)
 atemp = (1*u.mJy).to(u.K, u.brightness_temperature(b16,26.313093*u.GHz))
 rtemp = atemp*(1/0.3)*(1/0.6645) 
-print(rtemp,area16)
+print(rtemp)
 ```
-
-Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperature (K) | Width (km/s) | Area Under Curve (K.km/s)  
----|---|---|---|---|---
-`CH3OH_line8` P3 | 1.0007993958627737 | 0.6879 | 9.5142 | 0.58 | 5.5182 
-`CH3OH_line8` P2 | " | " | 9.5106 | 0.77 | 7.3231 
-`CH3OH_line8` P1 | " | " | 9.5099 | 0.80 | 7.6079
-`CH3OH_line10` | 0.9697425365447998 | 0.6878 | 10.0804 | 0.641 | 6.4616
-`CH3OH_line11` | 0.9680445194244385 | 0.6864 | 10.1184 | 0.92 | 9.3090 
-`CH3OH_line12` | 0.9767780900001526 | 0.6886 | 9.8225 | 0.73 | 7.1705
-`CH3OH_line13` | 0.9611411094665527 | 0.6824 | 10.1002 | 0.848 | 8.5649
-`CH3OH_line14` | 1.0004248467414423 | 0.6797 | 9.1794 | 0.86 | 7.8943 
-`CH3OH_line15` | 0.9594455361366272 | 0.6722 | 9.8307 | 0.92 | 9.0442
-`CH3OH_line16` | 0.9355015754699707 | 0.6645 | 10.1173 | 0.551 | 5.5746
-
 ### Thursday - 7/11
 
 N.B. Shortened work day because of EMRTC tour!
 
+Calculated full width at half maximum (FWHM) to find area under the Gaussian curves:
+> FWHM (km/s) = 2.355 * width 
+
+> Area (K.km/s) = FWHM * radiative temperature 
+
+Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperature (K) | Width (km/s) | Area Under Curve (K.km/s)  
+---|---|---|---|---|---
+`CH3OH_line8` P3 | 1.0007993958627737 | 0.6879 | 9.5142 | 0.58 | 12.9955 
+`CH3OH_line8` P2 | " | " | 9.5106 | 0.77 | 17.2460 
+`CH3OH_line8` P1 | " | " | 9.5099 | 0.80 | 17.9166
+`CH3OH_line10` | 0.9697425365447998 | 0.6878 | 10.0804 | 0.641 | 15.2170
+`CH3OH_line11` | 0.9680445194244385 | 0.6864 | 10.1184 | 0.92 | 21.9226 
+`CH3OH_line12` | 0.9767780900001526 | 0.6886 | 9.8225 | 0.73 | 16.8864
+`CH3OH_line13` | 0.9611411094665527 | 0.6824 | 10.1002 | 0.848 | 20.1704
+`CH3OH_line14` | 1.0004248467414423 | 0.6797 | 9.1794 | 0.86 | 18.5911 
+`CH3OH_line15` | 0.9594455361366272 | 0.6722 | 9.8307 | 0.92 | 21.2992
+`CH3OH_line16` | 0.9355015754699707 | 0.6645 | 10.1173 | 0.551 | 13.1283
+
 ### Friday - 7/12
 
+
 ### Goals For Next Week
+
