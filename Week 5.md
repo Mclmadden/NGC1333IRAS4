@@ -174,6 +174,16 @@ Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperatu
 
 ### Friday - 7/12
 
+Awaiting the calculations of degeneracy values, g, required for rotation diagram
+
+Read Jeffrey G. Mangum and Yancy L. Shirley's *How to Calculate Molecular Column Density* article 
 
 ### Goals For Next Week
 
+Obtain column densities and degeneracy values
+
+Create rotation diagram
+
+Calculate total excitation temperature from slope of rotation diagram
+
+Analyze findings and begin paper on Overleaf
