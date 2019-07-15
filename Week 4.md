@@ -178,7 +178,7 @@ Calculated weighted means for the data's centroid, width, and uncertainty:
 
 > Weighted Uncertainty = (sqrt(Σ(σ^-2)))^-1 = 0.0292 km/s
 
-Read more of Tielens *The Molecular Universe* review
+Read more of Tielens' *The Molecular Universe* review
 
 ### Goals For Next Week
 
