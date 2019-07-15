@@ -2,7 +2,7 @@
 
 Read K.M. Menten et al.'s *The Centimeter Transitions of E-type Methanol* article 
 
-Read Paul F. Goldsmith and William D. Langer's *Population Diagram Analysis of Molecular Line Emissin* article 
+Read Paul F. Goldsmith and William D. Langer's *Population Diagram Analysis of Molecular Line Emission* article 
 
 Messed around with the Overleaf template
 
