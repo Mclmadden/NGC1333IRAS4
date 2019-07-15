@@ -18,4 +18,4 @@ No workday due to day-trip tours (including VLA and VLBA antennae climbs!)
 
 ### Friday - 7/19 
 
-Goals For Next Week
+### Goals For Next Week
