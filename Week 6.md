@@ -4,6 +4,10 @@ Read K.M. Menten et al.'s *The Centimeter Transitions of E-type Methanol* articl
 
 Read Paul F. Goldsmith and William D. Langer's *Population Diagram Analysis of Molecular Line Emissin* article 
 
+Messed around with the Overleaf template
+
+Side note: Watched a broadcast of an Imposter Syndrome workshop led by a Columbia astronomy grad student! #RoarLionsRoar
+
 ### Tuesday - 7/16
 
 ### Wednesday - 7/17
