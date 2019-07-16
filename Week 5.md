@@ -157,9 +157,9 @@ N.B. Shortened work day because of EMRTC tour!
 Calculated full width at half maximum (FWHM) to calculate the areas under the Gaussian curves:
 > FWHM (km/s) = 2.355 * weighted width = 2.355 * 0.646 = 1.521 km/s 
 
-> Area (K.km/s) = FWHM * radiative temperature 
+> Area (K.km/s) = FWHM * radiation_temperature 
 
-Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiative Temperature (K) | Area Under Curve (K.km/s)  
+Methanol File | Beam Size (arcsec) | Mean Value (unitless) | Radiation Temperature (K) | Area Under Curve (K.km/s)  
 ---|---|---|---|---
 `CH3OH_line8` P3 | 1.0007993958627737 | 0.6879 | 31.7141 | 48.2476
 `CH3OH_line8` P2 | " | " | 31.7019| 48.2291
