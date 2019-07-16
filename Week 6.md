@@ -38,7 +38,9 @@ Methanol File | Radiation Temperature (K) | Area Under the Curve (K.km/s)
 `CH3OH_line15` | 35.7182 | 54.3392
 `CH3OH_line16` | 36.7596 | 55.9234 
 
-Opened `NGC1333IRAS4A_CH3OH_line8_m0p3.moment` in Inkscape to draw arrows and label each protostar 
+Opened `NGC1333IRAS4A_CH3OH_line8_m0p3.moment` in Inkscape to draw arrows and label each protostar:
+
+![moment0_8P3](https://user-images.githubusercontent.com/23585856/61336086-32a0d680-a7ed-11e9-9a68-861c6bf9caae.png)
 
 Continued to mess around with the Overleaf template 
 > Wrote rough draft of abstract and some of the body text 
