@@ -184,6 +184,4 @@ Read more of Tielens' *The Molecular Universe* review
 
 Make plot of the amplitudes to check for any pattern
 
-Stack all methanol spectra using weighted means of centroid, width, and uncertainty to make one large superspectrum  
-
-Make rotational diagram of methanol data
+Make rotation diagram of methanol data
