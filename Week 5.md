@@ -94,7 +94,7 @@ header['perplanebeams']['beams']['*0']['*0']['major']['value']
 
 Used CASA Viewer to get mean values of regions in psf files 
 
-Used PySpecKit's `radio_beam` package to convert y-axis from amplitude (mJ/bm) to radiative temperature (K), and multiplied radiative temperature by each transition's width to get the area under the Gaussian curve:
+Used PySpecKit's `radio_beam` package to convert y-axis from amplitude (mJ/bm) to radiation temperature (K), and multiplied radiation temperature by each transition's width to get the area under the Gaussian curve:
 
 ```python
 from radio_beam import Beam
@@ -182,7 +182,7 @@ Read Jeffrey G. Mangum and Yancy L. Shirley's *How to Calculate Molecular Column
 
 Obtain column densities and degeneracy values
 
-Create rotation diagram
+Create rotation diagram and fit a line 
 
 Calculate total excitation temperature from slope of rotation diagram
 
