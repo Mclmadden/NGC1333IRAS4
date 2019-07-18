@@ -21,8 +21,8 @@ plt.ion()
 
 #Rearrange y and ampl_err so that JQNs are in increasing order
 x = [2,3,4,5,6,7,8,9,10,11]
-y = [3.39,4.94,4.58,5.11,3.60,4.89,4.58,4.86,3.81,4.18] 
-ampl_err = [0.55,0.64,0.56,0.34,0.41,0.46,0.32,0.54,0.43,0.61]
+y = [4.94,3.39,4.58,5.11,3.60,4.89,4.58,4.86,3.81,4.18] 
+ampl_err = [0.64,0.55,0.56,0.34,0.41,0.46,0.32,0.54,0.43,0.61]
 
 plt.plot(x,y,'o',color='black') 
 plt.axis([0,12,0,6])
@@ -32,7 +32,7 @@ plt.xlabel('J Quantum Number')
 plt.ylabel('Amplitude (mJ/bm)') 
 ```
 
-![JQN_ampl](https://user-images.githubusercontent.com/23585856/60921396-9c523b00-a257-11e9-8a5f-5ffae3854f50.png)
+![JQN_ampl](https://user-images.githubusercontent.com/23585856/61477527-ba512700-a94c-11e9-9f16-7a83f1b4b759.png)
 
 Read more of Tielens' *The Molecular Universe* review
 
