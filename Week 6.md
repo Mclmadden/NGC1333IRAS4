@@ -57,6 +57,12 @@ No workday due to day-trip tours (including VLA and VLBA antennae climbs!)
 
 ### Thursday - 7/18
 
+Awaiting g_u values from Dave McPaters
+
+Awaiting technical details for Observation section of Overleaf report from Brian Svoboda
+
+Worked on Overleaf report
+
 ### Friday - 7/19 
 
 ### Goals For Next Week
