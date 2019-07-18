@@ -62,6 +62,9 @@ Awaiting g_u values from Dave McPaters
 Awaiting technical details for Observation section of Overleaf report from Brian Svoboda
 
 Worked on Overleaf report
+> Wrote more for Introduction including references
+
+> Wrote more for Methods and added equations for Rotation Diagram subsection 
 
 ### Friday - 7/19 
 
