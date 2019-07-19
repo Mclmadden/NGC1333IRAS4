@@ -178,6 +178,6 @@ N.B. The steep curve at the beginning is a strong indication that there are **tw
 
 Use `numpy.polyfit()` to fit a line to the rotation diagram, excluding the first three data points 
 
-Derive the total molecular column density, excitation temperature(s), and rotation partition function 
+Derive the total molecular column density and excitation temperature(s) 
 
 Continue writing Overleaf report 
