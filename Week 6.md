@@ -75,7 +75,7 @@ Equation from Öberg et al. to find N_u/g_u:
 (3k \int T_MB dV) / (8π^3 * ν * Sμ^2) = N_u/g_u
 > k = Boltzmann's constant
 
-> Integral of T_MB dV = area under the Gaussian curve
+> Integrated main-beam temperature = area under the Gaussian curve
 
 > ν = transition rest frequency 
 
