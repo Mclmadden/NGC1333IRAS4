@@ -111,4 +111,34 @@ RMS (J) | Amplitude (J) | Amplitude σ (J) | Centroid (km/s) | Width (km/s) | Ce
 1.065 E-3 | 3.81 E-3 | 4.3 E-4 | 7.00 | 0.92 | 0.12 
 1.171 E-3 | 4.18 E-3 | 6.1 E-4 | 6.66 | 0.551 | 0.093 
 
+Calculated each transition's natural log of N_u/g_u:
+
+```python
+import numpy as np 
+from astropy import units as u
+from astropy import constants as c
+import math as mt
+import matplotlib.pyplot as plt 
+plt.ion()
+
+#Function for calculating ln(N/g); input Gaussian area, rest frequency, S*mu^2
+def lnNg(A,f,D):
+    debye = 3.1623*10**(-25) * (u.J*u.m**3)**0.5
+    Ng = (3 * c.k_B * A*u.K*u.km/u.s) / (8 * (mt.pi**3) * f*u.GHz * D*debye**2)
+    uNg = Ng.to('cm**-2')
+    yaxis = mt.log(uNg.value)
+    print(yaxis)
+
+lnNg(52.5898,24.928728,11.22632)
+lnNg(52.5697,24.933504,15.71141)
+lnNg(52.5659,24.93401,6.37759)
+lnNg(55.7197,24.959123,20.10152)
+lnNg(55.9297,24.018176,24.51)
+lnNg(54.2941,25.124932,28.98505)
+lnNg(55.8286,25.294483,33.55241)
+lnNg(50.7392,25.5414567,38.21532)
+lnNg(54.3392,25.878239,42.95093)
+lnNg(55.9234,26.313093,47.69542)
+```
+
 ### Goals For Next Week
