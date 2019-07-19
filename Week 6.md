@@ -72,7 +72,14 @@ Read Karin I. Öberg et al.'s *Complex Molecules Toward Low-Mass Protostars: The
 
 Equation from Öberg et al. to find N_u/g_u:
 
-[3k  \int T_MB dV] / [8 π^3 ν Sμ^2] = N_u/g_u
+(3k \int T_MB dV) / (8π^3 ν Sμ^2) = N_u/g_u
+> k = Boltzmann's constant
+
+> Integral of T_MB dV = area under the Gaussian curve
+
+> ν = transition rest frequency 
+
+> Sμ^2 found on Splatalogue as S_ij * μ^2 
 
 Separated original Table 1 in Overleaf into Splatalogue info and fit info: 
 
