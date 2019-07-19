@@ -154,4 +154,8 @@ Rest Frequency (GHz) | ln(N_u/g_u) (cm^-2)
 25.878239 | 29.730666937248277
 26.313093 | 29.637962651957622
 
+Plotted rotation diagram (finally)!
+
+![rotation_diagram](https://user-images.githubusercontent.com/23585856/61567450-cfa57e80-aa3c-11e9-94b7-4dc13a6b6a3c.png)
+
 ### Goals For Next Week
