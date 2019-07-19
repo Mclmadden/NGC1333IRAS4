@@ -156,6 +156,20 @@ Rest Frequency (GHz) | ln(N_u/g_u) (cm^-2)
 
 Plotted rotation diagram (finally)!
 
+```python
+x = [29.21,36.17,45.46,57.07,71.00,87.26,105.84,126.74,149.97,175.53]
+y = [31.641926381766012,31.07712206910506,30.740422046193565,30.551180703326107,
+     30.395085249636868,30.15265650494573,30.027473059502565,29.792041199312983,
+     29.730666937248277,29.637962651957622]
+
+plt.plot(x,y,'o',color='black')
+plt.axis([0,200, 28,32])
+
+plt.title('CH3OH Rotation Diagram')
+plt.xlabel('$E_u/k$ (K)')
+plt.ylabel('ln($N_u$/$g_u$) (cm$^-2$)')
+```
+
 ![rotation_diagram](https://user-images.githubusercontent.com/23585856/61567450-cfa57e80-aa3c-11e9-94b7-4dc13a6b6a3c.png)
 
 ### Goals For Next Week
