@@ -126,7 +126,7 @@ def lnNg(A,f,D):
     debye = 3.1623*10**(-25) * (u.J*u.m**3)**0.5
     Ng = (3 * c.k_B * A*u.K*u.km/u.s) / (8 * (mt.pi**3) * f*u.GHz * D*debye**2)
     uNg = Ng.to('cm**-2')
-    yaxis = mt.log(uNg.value)
+    yaxis = mt.log(uNg.value) * u.cm**-2
     print(yaxis)
 
 lnNg(52.5898,24.928728,11.22632)
