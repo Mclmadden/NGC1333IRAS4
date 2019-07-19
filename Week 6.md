@@ -172,4 +172,12 @@ plt.ylabel('ln($N_u$/$g_u$) (cm$^-2$)')
 
 ![rotation_diagram](https://user-images.githubusercontent.com/23585856/61567450-cfa57e80-aa3c-11e9-94b7-4dc13a6b6a3c.png)
 
+N.B. The steep curve at the beginning is a strong indication that there are **two** rotation temperatures, a gradient of hotter to colder temperatures. A very interesting development! 
+
 ### Goals For Next Week
+
+Use `numpy.polyfit()` to fit a line to the rotation diagram, excluding the first three data points 
+
+Derive the total molecular column density, excitation temperature(s), and rotation partition function 
+
+Continue writing Overleaf report 
