@@ -40,8 +40,16 @@ Returned:
 > Specified value of *rcond*: 1.5543122344752192e-15 and 6.661338147750939e-16 
 
 Used polynomial coefficients to calculate T_rot for both sections 
+> T_rot = m^-1
+
+> T_rot7 = (-8.10619096e-03)^-1 = 123.36250218314619
+
+> T_rot3 = (-0.05564832)^-1 = 17.969994422113732
 
 Used ranges of T_rot on Splatalogue to calculate rotation partition function, Q(T_rot)
+> T_rot7 fell between Q(75)=2924.3023 and Q(150)=9750.0398
+
+> T_rot3 fell between Q(9.375)=78.1735 and Q(18.75)=274.9880 
 
 Worked on Overleaf report 
 
