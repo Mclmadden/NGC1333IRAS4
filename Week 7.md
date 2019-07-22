@@ -54,6 +54,10 @@ Used ranges of T_rot on Splatalogue to calculate rotation partition function, Q(
 Used y=mx+b form to fit two lines to the two sections of data:
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+plt.ion()
+
 x = [29.21,36.17,45.46,57.07,71.00,87.26,105.84,126.74,149.97,175.53]
 y = [31.641926381766012,31.07712206910506,30.740422046193565,30.551180703326107,
      30.395085249636868,30.15265650494573,30.027473059502565,29.792041199312983,
