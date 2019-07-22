@@ -21,13 +21,15 @@ np.polyfit(x,y,1,full=True,w=w)
 ```
 
 Returned:
-> Polynomial coefficients
+> Polynomial coefficients: array([-8.10619096e-03, 3.09523523e+01]
 
-> Residuals of least-squares fit 
+> Residuals of least-squares fit: array([404647.06224484] 
 
->(array([-8.10619096e-03, 3.09523523e+01]), array([404647.06224484]), 2, array([1.38773859, 0.27236303]), 1.5543122344752192e-15)
+> Effective rank of the scaled Vandermonde coefficient matrix: 2
 
+> Singular values of the scaled Vandermonde coefficient matris: array([1.38773859, 0.27236303])
 
+> Specified value of *rcond*: 1.5543122344752192e-15
 
 ### Tuesday - 7/23
 
