@@ -170,7 +170,7 @@ plt.xlabel('$E_u/k$ (K)')
 plt.ylabel('ln($N_u$/$g_u$) (cm$^{-2}$)')
 ```
 
-![rot_diagram](https://user-images.githubusercontent.com/23585856/61668858-548dd380-ac9b-11e9-980d-7aaa65be3bc4.png)
+![rot_diagram](https://user-images.githubusercontent.com/23585856/61669637-fa424200-ac9d-11e9-9ada-c7da4c416c5e.png)
 
 N.B. The steep curve at the beginning is a strong indication that there are **two** rotation temperatures, a gradient of hotter to colder temperatures. A very interesting development! 
 
