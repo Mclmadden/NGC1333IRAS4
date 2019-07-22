@@ -21,9 +21,9 @@ np.polyfit(x,y,1,full=True,w=w)
 ```
 
 Returned:
-> Polynomial coefficients: array([-8.10619096e-03, 3.09523523e+01]
+> Polynomial coefficients: array([-8.10619096e-03, 3.09523523e+01])
 
-> Residuals of least-squares fit: array([404647.06224484] 
+> Residuals of least-squares fit: array([404647.06224484]) 
 
 > Effective rank of the scaled Vandermonde coefficient matrix: 2
 
