@@ -64,24 +64,23 @@ y = [31.641926381766012,31.07712206910506,30.740422046193565,30.551180703326107,
      29.730666937248277,29.637962651957622]
 
 plt.plot(x,y,'o',color='black')
-plt.axis([0,200, 28,32])
+plt.axis([0,200, 29,33.5])
 
-plt.title('CH3OH Rotation Diagram')
-plt.xlabel('$E_u/k$ (K)')
-plt.ylabel('ln($N_u$/$g_u$) (cm$^-2$)')
-
-space3 = np.linspace(20,48,50)
+space3 = np.linspace(0,100,50)
 line3 = -0.05564832*space3 + 33.21459443
 plt.plot(space3,line3,'--r',label='y = 33.21459443 - 0.05564832x')
 
-space7 = np.linspace(49,200,100)
+space7 = np.linspace(0,200,100)
 line7 = -8.10619096e-03*space7 + 30.9523523
 plt.plot(space7,line7,'--b',label='y = 30.9523523 - 8.10619096e-03x')
 
 plt.legend(loc='upper right')
+plt.title('CH3OH Rotation Diagram')
+plt.xlabel('$E_u/k$ (K)')
+plt.ylabel('ln($N_u$/$g_u$) (cm$^{-2}$)')
 ```
 
-![rotation_diagram_fitted](https://user-images.githubusercontent.com/23585856/61667794-3377b380-ac98-11e9-8e34-e5d6f34c01ae.png)
+![rot_diagram_line](https://user-images.githubusercontent.com/23585856/61668482-075d3200-ac9a-11e9-8b03-4466f7ad25f8.png)
 
 Worked on Overleaf report 
 
