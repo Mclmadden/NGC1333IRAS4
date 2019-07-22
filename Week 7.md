@@ -80,7 +80,7 @@ plt.xlabel('$E_u/k$ (K)')
 plt.ylabel('ln($N_u$/$g_u$) (cm$^{-2}$)')
 ```
 
-![rot_diagram_line](https://user-images.githubusercontent.com/23585856/61668482-075d3200-ac9a-11e9-8b03-4466f7ad25f8.png)
+![rot_diagram_lines](https://user-images.githubusercontent.com/23585856/61669706-3aa1c000-ac9e-11e9-9647-705f7739c4c0.png)
 
 Worked on Overleaf report 
 
