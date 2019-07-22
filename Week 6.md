@@ -167,7 +167,7 @@ plt.axis([0,200, 28,32])
 
 plt.title('CH3OH Rotation Diagram')
 plt.xlabel('$E_u/k$ (K)')
-plt.ylabel('ln($N_u$/$g_u$) (cm$^-2$)')
+plt.ylabel('ln($N_u$/$g_u$) (cm$^{-2}$)')
 ```
 
 ![rot_diagram](https://user-images.githubusercontent.com/23585856/61668858-548dd380-ac9b-11e9-980d-7aaa65be3bc4.png)
