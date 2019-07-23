@@ -86,7 +86,9 @@ Worked on Overleaf report
 
 ### Tuesday - 7/23
 
+Calculated rotation partition functions, Q(T_rot), using linear interpolation 
 
+Worked on Overleaf report 
 
 ### Wednesday - 7/24 
 
