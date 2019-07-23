@@ -86,7 +86,40 @@ Worked on Overleaf report
 
 ### Tuesday - 7/23
 
-Calculated rotation partition functions, Q(T_rot), using linear interpolation 
+Calculated rotation partition functions, Q(T_rot), using linear interpolation (`scipy.interpolate.interp1d` and by hand) 
+
+Splatalogue info:
+
+Rotation Temperature (K) | Rotation Partition Function
+---|---
+9.375 | 78.1735
+18.75 | 274.9880
+37.50 | 920.9637
+75.00 | 2924.3023
+150.0 | 9750.0398
+225.0 | 20991.8100
+300.0 | 37027.3292
+500.0 | 102146.4089
+1000 | 347799.0417
+
+```python
+import scipy as sp
+from scipy import interpolate
+
+T = [9.375,18.75,37.5,75,150,225,300,500,1000]
+Q = [78.1735,274.988,920.9637,2924.3023,9750.0398,20991.81,37027.3292,102146.4089,347799.0417]
+
+f = sp.interpolate.interp1d(T,Q)
+
+cold = 17.97
+hot = 123.3625
+
+print(f(cold), f(hot))
+```
+
+Calculated Q(17.97) = 258.6130336 and Q(123.3625) = 7325.765364583334 using Scipy
+
+Calculated Q(17.97) = 258.6130336 and Q(123.3625) = 7325.765365 by hand and proved to be accurate (eugepae!)
 
 Worked on Overleaf report 
 
