@@ -127,7 +127,14 @@ Worked on Overleaf report
 
 ### Wednesday - 7/24 
 
+From Brian Svoboda: 
+> Cold / (Cold + Hot)
 
+> 6.87964E+16 / (6.87964E+16 + 2.02903E+17) = 0.253207773
+
+> Only ~25% of the total molecular column density is in the cold component 
+
+Worked on Overleaf report 
 
 ### Thursday - 7/25
 
