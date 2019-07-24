@@ -122,6 +122,8 @@ Calculated Q(17.97) = 258.6130336 and Q(123.3625) = 7325.765364583334 using Scip
 Calculated Q(17.97) = 258.6130336 and Q(123.3625) = 7325.765365 by hand and proved to be accurate (eugepae!)
 
 ```python
+import math as mt
+
 Ncold = 258.6130336 * mt.exp(33.21459443)
 Nhot = 7325.765364583334 * mt.exp(30.9523523)
 print(Ncold)
