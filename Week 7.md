@@ -121,6 +121,8 @@ Calculated Q(17.97) = 258.6130336 and Q(123.3625) = 7325.765364583334 using Scip
 
 Calculated Q(17.97) = 258.6130336 and Q(123.3625) = 7325.765365 by hand and proved to be accurate (eugepae!)
 
+Calculated N_T = 6.87964E+16 cm^-2 and N_T 2.02903E+17 cm^-2 utilizing the y-intercept (b) and ln(N_T/Q(T_rot))
+
 Worked on Overleaf report 
 
 ### Wednesday - 7/24 
