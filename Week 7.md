@@ -168,7 +168,7 @@ Calculated error bars for rotation diagram's amplitude:
 
 Error = ampl. σ / ampl.
 
-```
+```python
 import matplotlib.pyplot as plt
 plt.ion()
 
