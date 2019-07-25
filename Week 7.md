@@ -147,7 +147,51 @@ Worked on Overleaf report
 
 ### Thursday - 7/25
 
+Calculated error bars for rotation diagram's amplitude:
 
+Error = ampl. σ / ampl.
+
+```
+import matplotlib.pyplot as plt
+plt.ion()
+
+x = [29.21,36.17,45.46,57.07,71.00,87.26,105.84,126.74,149.97,175.53]
+y = [31.641926381766012,31.07712206910506,30.740422046193565,30.551180703326107,
+     30.395085249636868,30.15265650494573,30.027473059502565,29.792041199312983,
+     29.730666937248277,29.637962651957622]
+     
+p3 = (6.4E-4)/(4.94E-3)
+p2 = (5.6E-4)/(4.58E-3)
+p1 = (5.5E-4)/(3.39E-3)
+l10 = (3.4E-4)/(5.11E-3)
+l11 = (4.1E-4)/(3.6E-3)
+l12 = (4.6E-4)/(4.89E-3)
+l13 = (3.2E-4)/(4.58E-3)
+l14 = (5.4E-4)/(4.86E-3)
+l15 = (4.3E-4)/(3.81E-3)
+l16 = (6.1E-4)/(4.18E-3)
+ampl_err = [p3,p2,p1,l10,l11,l12,l13,l14,l15,l16]
+
+
+plt.errorbar(x,y,xerr=None,yerr=ampl_err,fmt='none',ecolor='black')
+plt.plot(x,y,'o',markersize=4,color='black')
+plt.axis([0,200, 29,33.5])
+
+space3 = np.linspace(0,100,50)
+line3 = -0.05564832*space3 + 33.21459443
+plt.plot(space3,line3,'--r',label='y = 33.21459443 - 0.05564832x')
+
+space7 = np.linspace(0,200,100)
+line7 = -8.10619096e-03*space7 + 30.9523523
+plt.plot(space7,line7,'--b',label='y = 30.9523523 - 8.10619096e-03x')
+
+plt.legend(loc='upper right')
+plt.title('CH$_3$OH Rotation Diagram')
+plt.xlabel('$E_u/k$ (K)')
+plt.ylabel('ln($N_u$/$g_u$) (cm$^{-2}$)')
+```
+
+![rot_diagram_lines_err](https://user-images.githubusercontent.com/23585856/61890267-5686ab00-aec4-11e9-9acd-7058e8757485.png)
 
 ### Friday - 7/26
 
