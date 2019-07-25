@@ -189,7 +189,6 @@ l15 = (4.3E-4)/(3.81E-3)
 l16 = (6.1E-4)/(4.18E-3)
 ampl_err = [p3,p2,p1,l10,l11,l12,l13,l14,l15,l16]
 
-
 plt.errorbar(x,y,xerr=None,yerr=ampl_err,fmt='none',ecolor='black')
 plt.plot(x,y,'o',markersize=4,color='black')
 plt.axis([0,200, 29,33.5])
@@ -209,6 +208,8 @@ plt.ylabel('ln($N_u$/$g_u$) (cm$^{-2}$)')
 ```
 
 ![rot_diagram_lines_err](https://user-images.githubusercontent.com/23585856/61890267-5686ab00-aec4-11e9-9acd-7058e8757485.png)
+
+Worked on Overleaf report 
 
 ### Friday - 7/26
 
