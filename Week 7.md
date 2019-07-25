@@ -143,6 +143,23 @@ From Brian Svoboda:
 
 > Only ~25% of the total molecular column density is in the cold component 
 
+Talked to Claire Chandler about results
+> Once error bars are added to rotation diagram, check if the 2 lines are good approximations for cold and hot components
+
+> Compare curve with standard N and T profiles (as functions of radius from the protostar) 
+
+> Emailed VLA observing proposal and an article on measuring distance to NGC 1333
+
+> Data points closer to the protostar are unresolved with a resolution ~1 arcsec.
+
+> If any results depend on distance, calculate distance in pc, but leave distance as variable in an equation to allow for future corrections 
+
+> Moment map: second "blob" of methanol detection next to B1 could be real because of the system's water maser 
+
+> MM: light free-free emission seen in countour map around A1 indicates direction of its outflow 
+
+> MM: large methanol outflow most likely from A2  
+
 Worked on Overleaf report 
 
 ### Thursday - 7/25
