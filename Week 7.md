@@ -213,7 +213,17 @@ Worked on Overleaf report
 
 ### Friday - 7/26
 
+Worked on Overleaf report
 
+Worked on ppt for 8/2 presentation
 
 ### Goals For Next Week 
 
+Finish ppt for 8/2 presentation
+
+Rehearse presentation and show Brian Svoboda
+
+Continue working on Overleaf report
+> Observations details
+
+> Compare standard N_T and T_ex profiles with rotation diagram 
