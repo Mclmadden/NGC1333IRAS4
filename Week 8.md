@@ -20,10 +20,14 @@ Worked on Overleaf report
 
 Rehearsed ppt presentation with Brian Svoboda
 
+Worked on Overleaf report
+
 ### Friday - 8/2 
 
 Ppt presentation!
 
+Worked on Overleaf report
+
 ### Goals For Next Week
 
-Finish Overleaf report
+Finish Overleaf report 
