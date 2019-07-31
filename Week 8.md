@@ -34,7 +34,7 @@ Worked on Overleaf report
 
 ### Wednesday - 7/31 
 
-Added uncertainty values to the two calculated T_ex values
+Uncertainty values looked off, ignore for the time being
 
 Worked on ppt presentation
 
