@@ -6,7 +6,7 @@ Worked on Overleaf report
 
 ### Tuesday - 7/30
 
-Met with Brian Svoboda to add uncertainty values to T_ex:
+Met with Brian Svoboda to add uncertainty values to T_ex by including covariance in `numpy.polyfit()`:
 
 ```python
 import numpy as np
@@ -33,6 +33,8 @@ Worked on ppt presentation
 Worked on Overleaf report
 
 ### Wednesday - 7/31 
+
+Added uncertainty values to the two calculated T_ex values
 
 Worked on ppt presentation
 
