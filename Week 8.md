@@ -50,6 +50,8 @@ Worked on Overleaf report
 
 Ppt presentation!
 
+Presentation from coworker too
+
 Worked on Overleaf report
 
 ### Goals For Next Week
