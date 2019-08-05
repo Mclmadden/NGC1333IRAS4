@@ -6,7 +6,7 @@ Worked on research poster (for NYC AstroFest in September, CU Science Showcase i
 
 ### Tuesday - 8/6
 
-¯\_(ツ)_/¯
+¯\ _(ツ)_/¯
 
 ### Wednesday - 8/7
 
@@ -14,7 +14,7 @@ More presentations from coworkers
 
 ### Thursday - 8/8
 
-¯\_(ツ)_/¯
+¯\ _(ツ)_/¯
 
 ### Friday - 8/9
 
