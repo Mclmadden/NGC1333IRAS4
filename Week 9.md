@@ -6,7 +6,9 @@ Worked on research poster (for NYC AstroFest in September, CU Science Showcase i
 
 ### Tuesday - 8/6
 
-¯\ _(ツ)_/¯
+Worked on research poster(s)
+
+Worked on corrections to Overleaf report
 
 ### Wednesday - 8/7
 
