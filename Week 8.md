@@ -57,3 +57,5 @@ Worked on Overleaf report
 ### Goals For Next Week
 
 Finish Overleaf report 
+
+Start research poster 
